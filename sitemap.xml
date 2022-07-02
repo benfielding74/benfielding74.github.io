@@ -3,39 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://benfielding74.github.io/</loc>
+    <loc>http://bfieldingapprenticeportfolio.me/</loc>
+    <lastmod>2022-06-30T12:05:16+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bfieldingapprenticeportfolio.me/posts/hack-3975/</loc>
+    <lastmod>2022-06-30T12:05:16+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bfieldingapprenticeportfolio.me/posts/</loc>
+    <lastmod>2022-06-30T12:05:16+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bfieldingapprenticeportfolio.me/posts/release0/</loc>
     <lastmod>2022-06-29T14:26:56+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://benfielding74.github.io/posts/</loc>
-    <lastmod>2022-06-29T14:26:56+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://benfielding74.github.io/posts/release0/</loc>
-    <lastmod>2022-06-29T14:26:56+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://benfielding74.github.io/posts/work-mapping-table/</loc>
+    <loc>http://bfieldingapprenticeportfolio.me/posts/work-mapping-table/</loc>
     <lastmod>2022-06-29T12:05:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://benfielding74.github.io/categories/</loc>
+    <loc>http://bfieldingapprenticeportfolio.me/posts/key-skills-matrix/</loc>
+    <lastmod>2022-06-28T12:05:16+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://benfielding74.github.io/archives/</loc>
+    <loc>http://bfieldingapprenticeportfolio.me/categories/</loc>
   </url>
   
   <url>
-    <loc>http://benfielding74.github.io/posts/key-skills-matrix/</loc>
+    <loc>http://bfieldingapprenticeportfolio.me/contents/</loc>
   </url>
   
   <url>
-    <loc>http://benfielding74.github.io/tags/</loc>
+    <loc>http://bfieldingapprenticeportfolio.me/tags/</loc>
   </url>
   
 </urlset>

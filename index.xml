@@ -13,7 +13,7 @@
       <pubDate>Thu, 30 Jun 2022 12:05:16 +0100</pubDate>
       
       <guid>https://benfielding74.github.io/posts/hack-3975/</guid>
-      <description>Situation: A request for a feature was added to team Kanban board. In a legacy project the Devs received a notification to a Slack channel whenever a file is added or deleted from their S3 buckets. They were requesting that this functionality be added to the current project.
+      <description>Situation A request for a feature was added to team Kanban board. In a legacy project the Devs received a notification to a Slack channel whenever a file is added or deleted from their S3 buckets. They were requesting that this functionality be added to the current project.
 As a developer I would like to receive a notification into the #uc-far-prod-alerts Slack channel whenever an object is added to or deleted from the new S3 buckets.</description>
     </item>
     
@@ -23,7 +23,7 @@ As a developer I would like to receive a notification into the #uc-far-prod-aler
       <pubDate>Wed, 29 Jun 2022 14:26:56 +0100</pubDate>
       
       <guid>https://benfielding74.github.io/posts/release0/</guid>
-      <description>Introduction About Me I am Ben Fielding and I work at Deparment for Work and Pensions, within the Digital Group, as an Apprentice DevOps engineer. My background is mainly in the private sector working within the parking industry. Some of my experience with technology was gained through configuring and repairing parking equipment. Prior to being made redundant in January 2020 I was department lead on a project to build and launch a parking app, which gave me some experience of writing tests, testing, doing user research and working in sprints.</description>
+      <description>Introduction About Me I am Ben Fielding and I work at Department for Work and Pensions, within the Digital Group, as an Apprentice DevOps engineer. My background is mainly in the private sector working within the parking industry. Some of my experience with technology was gained through configuring and repairing parking equipment. Prior to being made redundant in January 2020 I was department lead on a project to build and launch a parking app, which gave me some experience of writing tests, testing, doing user research and working in sprints.</description>
     </item>
     
     <item>

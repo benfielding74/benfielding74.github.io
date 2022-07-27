@@ -235,7 +235,7 @@ My colleague explained how this should work and I have diagrammed it below.</p>
 <em>figure 2 My diagram of how an SNS topic works, listening for events on a target then triggering a Lambda function</em></p>
 <p>With these changes in place we could see that proof of concept worked and the Lambda was being triggered but the Cloudwatch logs showed that it was not sending the Slack notification.
 We worked through the Terraform stack and my colleague identified that the VPC created in the Sandbox environment would not allow the Lambda to communicate out to Slack.
-This led me to talk to one of the network architects on the team who advised that all we needed to do to test was to remove the elements of the original project that set up VPC rules for the Lambda. I did this and managed to generate a slack notification. <a href="https://benfielding74.github.io/posts/work-mapping-table/">(<em>K18</em>)</a>
+This led me to talk to one of the network architects on the team who advised that all we needed to do to test was to remove the elements of the original project that set up VPC rules for the Lambda. I did this and managed to generate a slack notification. <a href="https://benfielding74.github.io/posts/work-mapping-table/#K18">(<em>K18</em>)</a>
 With all of this in place within the sandbox environment I raised a request to merge my code into the main example application repository.</p>
 <p>My line manager picked up the merge request and identified some further actions:</p>
 <ul>
@@ -297,11 +297,12 @@ The testing worked in the sandbox environment and I again submitted a merge requ
 <p><img loading="lazy" src="feedback.png" alt="snippet of slack conversation"  />
 
 <em>figure 3 Some feedback received from the team requesting the feature</em></p>
-<p>I feel this was a really good first ticket as it taught me how the Terraform projects in my team are structured. It taught me about how large IaC projects with Terraform can be broken down into modules for each part of the project. It taught me about how AWS SNS service works to listen for events and trigger Lambda&rsquo;s that can be used to send notifications and it taught me a lot about the version control process and conventions within my team, documenting my process and gave me an opportunity to get to know and work with other members of the team. <a href="https://benfielding74.github.io/posts/work-mapping-table/">(<em>S16</em>)</a> <a href="https://benfielding74.github.io/posts/work-mapping-table/">(<em>K19</em>)</a> I also had an opportunity to see how a new feature or product moves through stages from Sandbox to production. One really valuable lesson I will take from this ticket is to pull from the main branch of the project repo every day and rebase your branch code. Working on a branch of a major project means lots of other people are working and making changes which can affect how your feature code works if you don&rsquo;t keep up with those changes.</p>
+<p>I feel this was a really good first ticket as it taught me how the Terraform projects in my team are structured. It taught me about how large IaC projects with Terraform can be broken down into modules for each part of the project. It taught me about how AWS SNS service works to listen for events and trigger Lambda&rsquo;s that can be used to send notifications and it taught me a lot about the version control process and conventions within my team, documenting my process and gave me an opportunity to get to know and work with other members of the team. <a href="https://benfielding74.github.io/posts/work-mapping-table/#S16">(<em>S16</em>)</a> <a href="https://benfielding74.github.io/posts/work-mapping-table/#K19">(<em>K19</em>)</a> I also had an opportunity to see how a new feature or product moves through stages from Sandbox to production. One really valuable lesson I will take from this ticket is to pull from the main branch of the project repo every day and rebase your branch code. Working on a branch of a major project means lots of other people are working and making changes which can affect how your feature code works if you don&rsquo;t keep up with those changes.</p>
 <p>I feel I still need to do some more research into how VPC&rsquo;s work and what the network modules do within the projects Terraform stacks as I did not really need to touch these as part of the project. I am following a Terraform path on Pluralsight to help fill in my knowledge gaps in this respect.</p>
 <p>I don&rsquo;t feel I would do anything especially differently as I was guided through this well by my line manager and team members.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!-- [^1]: [K18](https://benfielding74.github.io/posts/work-mapping-table/)
+[^2]: [S16](https://benfielding74.github.io/posts/work-mapping-table/)
+[^3]: [K19](https://benfielding74.github.io/posts/work-mapping-table/) -->
 
 
   </div>
@@ -320,7 +321,7 @@ The testing worked in the sandbox environment and I again submitted a merge requ
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-    <span>Version 0.3.0</span>
+    <span>Version 0.4.0</span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

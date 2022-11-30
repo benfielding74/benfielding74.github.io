@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Ben Fielding - Apprenticeship Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Oct 2022 14:00:48 +0100</lastBuildDate><atom:link href="http://benfielding74.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Nov 2022 15:55:12 +0000</lastBuildDate><atom:link href="http://benfielding74.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hack-hw43</title>
+      <link>http://benfielding74.github.io/posts/hack-hw43/</link>
+      <pubDate>Tue, 22 Nov 2022 15:55:12 +0000</pubDate>
+      
+      <guid>http://benfielding74.github.io/posts/hack-hw43/</guid>
+      <description>Situation VPC flow logs are retained for 30 days in both prod and nonprod environments. Following an audit of logs a ticket was raised to investigate what our log retention periods should be and to make the required changes to our infrastructure.
+Task The scope of the ticket was to contact Secure Design Services to find out what log retention periods should be set at and then make the required changes to our core-infra stack to implement this.</description>
+    </item>
+    
     <item>
       <title>hack-hw98</title>
       <link>http://benfielding74.github.io/posts/hack-hw98/</link>
@@ -51,7 +61,7 @@ As a developer I would like to receive a notification into the #uc-far-prod-aler
       <pubDate>Wed, 29 Jun 2022 14:59:39 +0100</pubDate>
       
       <guid>http://benfielding74.github.io/posts/reference-list/</guid>
-      <description> Reference Type Details Link Web page Alex W L Chan, July 2019, &amp;lsquo;Listing even more keys in an s3 bucket with Python&amp;rsquo; viewed 25/08/22 https://alexwlchan.net/2019/07/listing-s3-keys/ Web Page AWS Documentation, &amp;lsquo;Restoring an archived object&amp;rsquo; viewed 19/08/22 https://docs.aws.amazon.com/AmazonS3/latest/userguide/restoring-objects.html Web Page Boto3 Docs 1.24.59, &amp;lsquo;Error Handling&amp;rsquo; viewed 25/08/22 https://boto3.amazonaws.com/v1/documentation/api/latest/guide/error-handling.html Web Page Prometheus issues on github, &amp;lsquo;Schedules for scrape configs and alerts #6209&amp;rsquo; viewed 09/11/22 https://github.com/prometheus/prometheus/issues/6209 </description>
+      <description>Reference Type Details Link Web page Alex W L Chan, July 2019, &amp;lsquo;Listing even more keys in an s3 bucket with Python&amp;rsquo; viewed 25/08/22 https://alexwlchan.net/2019/07/listing-s3-keys/ Web Page AWS Documentation, &amp;lsquo;Restoring an archived object&amp;rsquo; viewed 19/08/22 https://docs.aws.amazon.com/AmazonS3/latest/userguide/restoring-objects.html Web Page Boto3 Docs 1.24.59, &amp;lsquo;Error Handling&amp;rsquo; viewed 25/08/22 https://boto3.amazonaws.com/v1/documentation/api/latest/guide/error-handling.html Web Page Prometheus issues on github, &amp;lsquo;Schedules for scrape configs and alerts #6209&amp;rsquo; viewed 09/11/22 https://github.com/prometheus/prometheus/issues/6209 Web Page Robert Walters, January 2017, &amp;lsquo;Providing Least Privileged Data Access In MongoDB&amp;rsquo; viewed 28/11/22 https://www.</description>
     </item>
     
     <item>

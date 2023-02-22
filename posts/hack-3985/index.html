@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Hack 3985 | Ben Fielding - Apprenticeship Portfolio</title>
+<meta name="keywords" content="">
+<meta name="description" content="Situation Legacy accounts were created for dedicated applications which are now defunct with resources in these accounts still incurring costs to the organisation. Automating the deletion of AWS resources in legacy accounts is required for reducing costs and security risks.
+Task My colleague and I were tasked with auditing legacy accounts, recording costs, and creating a solution for automating the removal of resources after migrating application logs to a new and dedicated log account.">
+<meta name="author" content="">
+<link rel="canonical" href="http://benfielding74.github.io/posts/hack-3985/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5da2b8f488e04562773ba5fddb88e7394c8690b8edead02c83c63215dd6d93be.css" integrity="sha256-XaK49IjgRWJ3O6X924jnOUyGkLjt6tAsg8YyFd1tk74=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://benfielding74.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://benfielding74.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://benfielding74.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://benfielding74.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="http://benfielding74.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Hack 3985" />
+<meta property="og:description" content="Situation Legacy accounts were created for dedicated applications which are now defunct with resources in these accounts still incurring costs to the organisation. Automating the deletion of AWS resources in legacy accounts is required for reducing costs and security risks.
+Task My colleague and I were tasked with auditing legacy accounts, recording costs, and creating a solution for automating the removal of resources after migrating application logs to a new and dedicated log account." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://benfielding74.github.io/posts/hack-3985/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-30T09:57:16&#43;01:00" />
+<meta property="article:modified_time" content="2022-11-30T09:57:16&#43;01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hack 3985"/>
+<meta name="twitter:description" content="Situation Legacy accounts were created for dedicated applications which are now defunct with resources in these accounts still incurring costs to the organisation. Automating the deletion of AWS resources in legacy accounts is required for reducing costs and security risks.
+Task My colleague and I were tasked with auditing legacy accounts, recording costs, and creating a solution for automating the removal of resources after migrating application logs to a new and dedicated log account."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://benfielding74.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Hack 3985",
+      "item": "http://benfielding74.github.io/posts/hack-3985/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hack 3985",
+  "name": "Hack 3985",
+  "description": "Situation Legacy accounts were created for dedicated applications which are now defunct with resources in these accounts still incurring costs to the organisation. Automating the deletion of AWS resources in legacy accounts is required for reducing costs and security risks.\nTask My colleague and I were tasked with auditing legacy accounts, recording costs, and creating a solution for automating the removal of resources after migrating application logs to a new and dedicated log account.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Situation Legacy accounts were created for dedicated applications which are now defunct with resources in these accounts still incurring costs to the organisation. Automating the deletion of AWS resources in legacy accounts is required for reducing costs and security risks.\nTask My colleague and I were tasked with auditing legacy accounts, recording costs, and creating a solution for automating the removal of resources after migrating application logs to a new and dedicated log account. We discovered that our current manual processes were inefficient and time-consuming due to the sheer amount of accounts that needed to be audited, and the number of resources in each account. The solution we proposed was to create a set of scripts that could be run to delete cloud resources after they had been migrated, reducing the time it took to decommission an account by a considerable amount.\nAction Working with the delivery manager and tech lead, we broke the ‘Epic’ into more manageable tasks. We began by auditing and recording costs for each account, and then testing our automation on non production accounts with a set of project tags and resources mapped. We then identified opportunities for cost savings, and created scripts to automate resource deletion. Finally, we successfully ran the automation script across the legacy accounts, reducing costs and risks associated with them.\nTo audit the legacy accounts I exported reports from AWS cost management for each account. I then used Cloudability, which is a cloud management platform that provides organisations with tools to manage and optimise their cloud spending, to create a dashboard which we would be able to use to track cost savings over the course of the project.\nWe were set up with our own Kanban board by the team delivery manager so we could assign tickets to ourselves and work on different aspects of the project simultaneously. Whilst my colleague looked at a process to migrate logs to the new log account, I started to look at how I would automate the deletion of resources.\nI first spent some time looking at the official AWS documentation and performing a Google search to find out if there were any other options available for automatically deleting resources. I quickly came across a software called AWS Nuke which is a tool that would remove all resources in the accounts including snapshots, EFS, EC2, RDS, and Lambda. After looking at the documentation and reading the reviews, I decided that this would not be an appropriate service to use as our task was to remove select resources from the accounts. I then looked for something more customizable, and came to the conclusion that a bespoke solution using a bash script with AWS CLI would be the most suitable for our requirements.(K24)\nFig 1: The first iteration of my bash script to delete s3 buckets\nWhilst my script worked perfectly on resources created for testing, once I tried to use the script on resources in the legacy accounts I started to experience errors with the scripts not performing as they had in tests. The error messages indicated that ‘versioned’ buckets cannot be deleted. After reviewing the bucket settings and reading the AWS Cli documents I realised I would have to implement some further steps to my script to delete first the version markers, then the delete markers, followed by the bucket objects before finally deleting the bucket itself.\nDelete markers are a placeholder for a versioned object. In versioning enabled buckets the objects, if deleted, are not actually deleted but the delete marker makes it behave as if deleted. These markers have to be removed first before the bucket can be fully deleted.\nFor my second iteration of the script I decided to add functions to handle the deletion of the versions and markers. This made my script easier to understand and debug as each function handled a specific task. I then used a systematic debugging approach to revise my script based on the errors it was generating until it worked to carry out the s3 bucket deletion.\nFig 2: The next iteration of my bash script\nI devised and tested two further scripts to delete Elastic Container Services and Registries based on my S3 script. I then worked through the project tags in the non prod account on my first ticket to remove all services, leaving only the log buckets to be migrated as part of my colleagues work.\nWork on the next ticket in the project required export of Cloudwatch logs to an S3 bucket so they could be migrated along with other logs. I attempted to build a script to automate this task but ran into problems as I had to set start and end dates for the export using Unix epoch time. To do this I had to access the creation time of the object using ‘jq’ which is a json tool for bash. This created a lot of problems with parsing the time from Unix to UTC and after discussions with my line manager, he suggested that I look at the Python boto3 library. Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2.\nAs a result of reading the documentation, I decided that this would be the best option. I found some examples that suited my use case and adapted them. As soon as I had a working script, I started testing, but I discovered that you are only allowed one log group export per account, so I had to put a conditional statement in to hold the loop until the current export was finished. It worked until it reached a log group with a 30-day retention policy. In the export, the oldest log date did not match the creation time date I was using as a variable. As a result, I needed to check whether retention was in the log group and then use that rule to set a new creation date. I settled in the end on for 'retentionInDays' in log_group_obj: as my condition which again on a small test worked. I ran a basic test using pylint to check it was ok, formatted correctly and not throwing any syntax or attribute errors.\nFig 3: Part of my Python script to export Cloudwatch log groups\nI took the opportunity whilst waiting for the Cloudwatch log group exports to complete to refactor my first set of bash scripts into Python as well.\nMy colleague encountered a blocker in his ticket to migrate logs across accounts, which we discussed. Logs that had been archived using AWS Glacier Flexible Retrieval storage class could not be migrated without a process involving retrieving them from storage, copying them to another S3 bucket and then moving them to a new account.(1) We discussed how we could resolve this and also asked our team if they had any solutions. One of the team advised that if we created a bucket in Terraform with a replication policy then we could copy the files easily within the source account and they would be replicated in the log account without needing to set up permissions to copy across accounts. We decided that this was the route we would take to save some time and assigned ourselves tasks to complete this. I would write another script that would retrieve the objects from storage then copy them to a created S3 bucket with replication policy attached.\nAs I had written my other scripts in a modular fashion I could reuse some functions in my retrieval script. The problems that I had to solve whilst building this scripts were associated with limitations in how many objects could be processed at a time. The limit to how many objects could be processed at a time was set to 1000. I had to implement pagination into my script which is a boto3 method that allows you to continue calling objects into new arrays for processing.(2) I implemented this and also implemented error handling to stop my script from exiting if there was a known issue such as an object not in storage or already in the process of being retrieved.(3) Some of the buckets we were working with contained millions of objects which led to long wait times to retrieve. A suggestion was made that parallelism could be used to increase efficiency of the script. With parallel programming, a computer can execute multiple instructions simultaneously. With the python boto3 library I was able to process 10 arrays of 1000 items simultaneously which considerably reduced the time taken to complete the retrieval.\nMy final action in this project was to update the documentation to explain the process and how the scripts could be used. This involved updating README’s in the project repository and creating a wiki page in the team confluence area with a process map and instructions.\nFig 4: Process map completed as part of the documentation stage of the project\nResult This was a complicated project to work on but I learnt a great deal over the course of the project such as bash scripting, how to use AWS cli commands to query, create and destroy resources, using python scripting and especially the AWS boto3 library, to create faster and cleaner scripts. I felt I worked in a manner consistent with Agile methodology, working on tickets in short iterations, typically lasting two to four weeks, with each iteration resulting in a working, tested incremental improvement. I followed principles and practices such as continuous planning, testing, integration, and delivery, as well as seeking frequent feedback and adapting my approach based on this feedback.(S8)\nhow did this benefit the team and the business?\nThe most satisfying part of the project for me was reviewing the cost dashboards at the end of the project. By automating this process, not only did it improve the efficiency of our team, but it also reduced costs and improved security by eliminating any unnecessary resources in inactive accounts. We made a cost saving of 59% per month, saving DWP something in the region of £50k between June 2022 and November 2022. By putting in place automation of the decommissioning process we saved the team countless man hours. The tools we created as part of this project have been subsequently used to decommission two further applications. I worked on both of these projects and had the opportunity to make further improvements to the process by adapting the scripts to run on an EC2 instance in the legacy accounts so they could run in the background without needing to tie up resource on a team members machine. The project received good feedback from the Head of infrastructure and from other senior members of the Digital practice.\nFig 5: example of feedback received following the project\n",
+  "wordCount" : "1805",
+  "inLanguage": "en",
+  "datePublished": "2022-11-30T09:57:16+01:00",
+  "dateModified": "2022-11-30T09:57:16+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://benfielding74.github.io/posts/hack-3985/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ben Fielding - Apprenticeship Portfolio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://benfielding74.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://benfielding74.github.io/" accesskey="h" title="Ben Fielding - Apprenticeship Portfolio (Alt + H)">Ben Fielding - Apprenticeship Portfolio</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://benfielding74.github.io/contents/" title="contents">
+                    <span><i class='fa fa-heart'></i>contents</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Hack 3985
+    </h1>
+    <div class="post-meta"><span title='2022-11-30 09:57:16 +0100 +0100'>November 30, 2022</span>&nbsp;|&nbsp;<a href="https://github.com/benfielding74/apprentice-portfolio/tree/main/content/posts/hack-3985/index.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> 
+  <div class="post-content"><h3 id="situation">Situation<a hidden class="anchor" aria-hidden="true" href="#situation">#</a></h3>
+<p>Legacy accounts were created for dedicated applications which are now defunct with resources in these accounts still incurring costs to the organisation. Automating the deletion of AWS resources in legacy accounts is required for reducing costs and security risks.</p>
+<h3 id="task">Task<a hidden class="anchor" aria-hidden="true" href="#task">#</a></h3>
+<p>My colleague and I were tasked with auditing legacy accounts, recording costs, and creating a solution for automating the removal of resources after migrating application logs to a new and dedicated log account. We discovered that our current manual processes were inefficient and time-consuming due to the sheer amount of accounts that needed to be audited, and the number of resources in each account. The solution we proposed was to create a set of scripts that could be run to delete cloud resources after they had been migrated, reducing the time it took to decommission an account by a considerable amount.</p>
+<h3 id="action">Action<a hidden class="anchor" aria-hidden="true" href="#action">#</a></h3>
+<p>Working with the delivery manager and tech lead, we broke the &lsquo;Epic&rsquo; into more manageable tasks. We began by auditing and recording costs for each account, and then testing our automation on non production accounts with a set of project tags and resources mapped. We then identified opportunities for cost savings, and created scripts to automate resource deletion. Finally, we successfully ran the automation script across the legacy accounts, reducing costs and risks associated with them.</p>
+<p>To audit the legacy accounts I exported reports from AWS cost management for each account. I then used Cloudability, which is a cloud management platform that provides organisations with tools to manage and optimise their cloud spending, to create a dashboard which we would be able to use to track cost savings over the course of the project.</p>
+<p>We were set up with our own Kanban board by the team delivery manager so we could assign tickets to ourselves and work on different aspects of the project simultaneously. Whilst my colleague looked at a process to migrate logs to the new log account,  I started to look at how I would automate the deletion of resources.</p>
+<p>I first spent some time looking at the official AWS documentation and performing a Google search to find out if there were any other options available for automatically deleting resources. I quickly came across a software called <a href="https://github.com/rebuy-de/aws-nuke">AWS Nuke</a> which is a tool that would remove all resources in the accounts including snapshots, EFS, EC2, RDS, and Lambda. After looking at the documentation and reading the reviews, I decided that this would not be an appropriate service to use as our task was to remove select resources from the accounts. I then looked for something more customizable, and came to the conclusion that a bespoke solution using a bash script with AWS CLI would be the most suitable for our requirements.<a href="http://benfielding74.github.io/posts/work-mapping-table/#K24">(<em>K24</em>)</a></p>
+<p><img loading="lazy" src="bash1.svg" alt="First iteration of the bash script"  />
+
+<em>Fig 1: The first iteration of my bash script to delete s3 buckets</em></p>
+<p>Whilst my script worked perfectly on resources created for testing, once I tried to use the script on resources in the legacy accounts I started to experience errors with the scripts not performing as they had in tests. The error messages indicated that &lsquo;versioned&rsquo; buckets cannot be deleted. After reviewing the bucket settings and reading the AWS Cli documents I realised I would have to implement some further steps to my script to delete first the version markers, then the delete markers, followed by the bucket objects before finally deleting the bucket itself.</p>
+<blockquote>
+<p>Delete markers are a placeholder for a versioned object. In versioning enabled buckets the objects, if deleted, are not actually deleted but the delete marker makes it behave as if deleted. These markers have to be removed first before the bucket can be fully deleted.</p>
+</blockquote>
+<p>For my second iteration of the script I decided to add functions to handle the deletion of the versions and markers. This made my script easier to understand and debug as each function handled a specific task. I then used a systematic debugging approach to revise my script based on the errors it was generating until it worked to carry out the s3 bucket deletion.</p>
+<p><img loading="lazy" src="bash2.svg" alt="Second iteration of the bash script"  />
+</p>
+<p><em>Fig 2: The next iteration of my bash script</em></p>
+<p>I devised and tested two further scripts to delete Elastic Container Services and Registries based on my S3 script. I then worked through the project tags in the non prod account on my first ticket to remove all services, leaving only the log buckets to be migrated as part of my colleagues work.</p>
+<p>Work on the next ticket in the project required export of Cloudwatch logs to an S3 bucket so they could be migrated along with other logs. I attempted to build a script to automate this task but ran into problems as I had to set start and end dates for the export using Unix epoch time. To do this I had to access the creation time of the object using &lsquo;jq&rsquo; which is a json tool for bash. This created a lot of problems with parsing the time from Unix to UTC and after discussions with my line manager, he suggested that I look at the Python boto3 library. Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2.</p>
+<p>As a result of reading the documentation, I decided that this would be the best option. I found some examples that suited my use case and adapted them. As soon as I had a working script, I started testing, but I discovered that you are only allowed one log group export per account, so I had to put a conditional statement in to hold the loop until the current export was finished. It worked until it reached a log group with a 30-day retention policy. In the export, the oldest log date did not match the creation time date I was using as a variable. As a result, I needed to check whether retention was in the log group and then use that rule to set a new creation date. I settled in the end on
+<code>for 'retentionInDays' in log_group_obj:</code> as my condition which again on a small test worked. I ran a basic test using pylint to check it was ok, formatted correctly and not throwing any syntax or attribute errors.</p>
+<p><img loading="lazy" src="cloudwatch.png" alt="Cloudwatch python script"  />
+</p>
+<p><em>Fig 3: Part of my Python script to export Cloudwatch log groups</em></p>
+<p>I took the opportunity whilst waiting for the Cloudwatch log group exports to complete to refactor my first set of bash scripts into Python as well.</p>
+<p>My colleague encountered a blocker in his ticket to migrate logs across accounts, which we discussed. Logs that had been archived using AWS Glacier Flexible Retrieval storage class could not be migrated without a process involving retrieving them from storage, copying them to another S3 bucket and then moving them to a new account.<a href="http://benfielding74.github.io/posts/reference-list/#1">(<em>1</em>)</a> We discussed how we could resolve this and also asked our team if they had any solutions. One of the team advised that if we created a bucket in Terraform with a replication policy then we could copy the files easily within the source account and they would be replicated in the log account without needing to set up permissions to copy across accounts. We decided that this was the route we would take to save some time and assigned ourselves tasks to complete this. I would write another script that would retrieve the objects from storage then copy them to a created S3 bucket with replication policy attached.</p>
+<p>As I had written my other scripts in a modular fashion I could reuse some functions in my retrieval script. The problems that I had to solve whilst building this scripts were associated with limitations in how many objects could be processed at a time. The limit to how many objects could be processed at a time was set to 1000. I had to implement pagination into my script which is a boto3 method that allows you to continue calling objects into new arrays for processing.<a href="http://benfielding74.github.io/posts/reference-list/#2">(<em>2</em>)</a> I implemented this and also implemented error handling to stop my script from exiting if there was a known issue such as an object not in storage or already in the process of being retrieved.<a href="http://benfielding74.github.io/posts/reference-list/#3">(<em>3</em>)</a> Some of the buckets we were working with contained millions of objects which led to long wait times to retrieve. A suggestion was made that parallelism could be used to increase efficiency of the script. With parallel programming, a computer can execute multiple instructions simultaneously. With the python boto3 library I was able to process 10 arrays of 1000 items simultaneously which considerably reduced the time taken to complete the retrieval.</p>
+<p>My final action in this project was to update the documentation to explain the process and how the scripts could be used. This involved updating README’s in the project repository and creating a wiki page in the team confluence area with a process map and instructions.</p>
+<p><img loading="lazy" src="new_decom_flow.jpg" alt="Project process map"  />
+</p>
+<p><em>Fig 4: Process map completed as part of the documentation stage of the project</em></p>
+<h3 id="result">Result<a hidden class="anchor" aria-hidden="true" href="#result">#</a></h3>
+<p>This was a complicated project to work on but I learnt a great deal over the course of the project such as bash scripting, how to use AWS cli commands to query, create and destroy resources, using python scripting and especially the AWS boto3 library, to create faster and cleaner scripts. I felt I worked in a manner consistent with Agile methodology, working on tickets in short iterations, typically lasting two to four weeks, with each iteration resulting in a working, tested incremental improvement. I followed principles and practices such as continuous planning, testing, integration, and delivery, as well as seeking frequent feedback and adapting my approach based on this feedback.<a href="http://benfielding74.github.io/posts/work-mapping-table/#S8.1">(<em>S8</em>)</a></p>
+<p>how did this benefit the team and the business?</p>
+<p>The most satisfying part of the project for me was reviewing the cost dashboards at the end of the project. By automating this process, not only did it improve the efficiency of our team, but it also reduced costs and improved security by eliminating any unnecessary resources in inactive accounts. We made a cost saving of 59% per month, saving DWP something in the region of £50k between June 2022 and November 2022. By putting in place automation of the decommissioning process we saved the team countless man hours. The tools we created as part of this project have been subsequently used to decommission two further applications. I worked on both of these projects and had the opportunity to make further improvements to the process by adapting the scripts to run on an EC2 instance in the legacy accounts so they could run in the background without needing to tie up resource on a team members machine. The project received good feedback from the Head of infrastructure and from other senior members of the Digital practice.</p>
+<p><img loading="lazy" src="feedback.png" alt="Feedback"  />
+</p>
+<p><em>Fig 5: example of feedback received following the project</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="http://benfielding74.github.io/">Ben Fielding - Apprenticeship Portfolio</a></span>
+    <span>Version 2.1.0</span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

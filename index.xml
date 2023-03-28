@@ -6,7 +6,16 @@
     <description>Recent content on Ben Fielding - Apprenticeship Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Nov 2022 09:57:16 +0100</lastBuildDate><atom:link href="http://benfielding74.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jan 2023 12:13:26 +0000</lastBuildDate><atom:link href="http://benfielding74.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack Hw255</title>
+      <link>http://benfielding74.github.io/posts/hack-hw255/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>http://benfielding74.github.io/posts/hack-hw255/</guid>
+      <description>Situation A developer from one of the feature teams raised a ticket to be granted access to the production database. They have tested their requirement to provide reports against statistical data in a non production environment and now need production access to inform a local job service trial and future national reporting. They have already raised a ticket with the Secure Design Systems team and have been granted authorisation under DWP guidelines to access the production database for a defined time period.</description>
+    </item>
+    
     <item>
       <title>Hack 3985</title>
       <link>http://benfielding74.github.io/posts/hack-3985/</link>
@@ -90,7 +99,7 @@ As a developer I would like to receive a notification into the #uc-far-prod-aler
       
       <guid>http://benfielding74.github.io/posts/self-led-learning/</guid>
       <description>Team specific courses undertaken during my apprenticeship
-Course title Provider Link to course content Time spent completing Tools and Technologies covered Setting Up Lambda Functions with S3 Event Triggers Cloud Guru Examples of course content 1 Hour AWS IAM, SNS, Lambda, s3api Hashicorp Certified: Terraform Associate Pluralsight Examples of the course content 8 hours Hashicorp Terraform Certification Path Technical Writing Courses Google https://developers.google.com/tech-writing 2 hours Covering how to write effective technical documents </description>
+Course title Provider Link to course content Time spent completing Tools and Technologies covered Setting Up Lambda Functions with S3 Event Triggers Cloud Guru Examples of course content 1 Hour AWS IAM, SNS, Lambda, s3api Hashicorp Certified: Terraform Associate Pluralsight Examples of course content 8 hours Hashicorp Terraform Certification Path Technical Writing Courses Google https://developers.google.com/tech-writing 2 hours Covering how to write effective technical documents Network Concepts and Protocols Pluralsight Examples of course content 3 hours CompTIA Network+ Path Getting Started With Linux Pluralsight Examples of course content 1 Hour 44 minutes LPI Linux Essentials Path </description>
     </item>
     
     <item>

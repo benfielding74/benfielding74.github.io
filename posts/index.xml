@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Ben Fielding - Apprenticeship Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Jan 2023 12:13:26 +0000</lastBuildDate><atom:link href="http://benfielding74.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 18:12:03 +0100</lastBuildDate><atom:link href="http://benfielding74.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack 4235</title>
+      <link>http://benfielding74.github.io/posts/hack-4235/</link>
+      <pubDate>Mon, 22 May 2023 18:12:03 +0100</pubDate>
+      
+      <guid>http://benfielding74.github.io/posts/hack-4235/</guid>
+      <description>Situation Configuration of Jenkins controller and agents is done by means of a Jenkins module which holds all of the Jenkins configuration in a mixture of xml and other files.
+Task In order to standardize the configuration, utilize consul templates to configure application within the terraform-aws-jenkins module.
+Action I decided to use the Plan-Do-Check-Act problem solving technique in my workflow for this ticket as I felt it would be most appropriate.</description>
+    </item>
+    
     <item>
       <title>Hack Hw255</title>
       <link>http://benfielding74.github.io/posts/hack-hw255/</link>

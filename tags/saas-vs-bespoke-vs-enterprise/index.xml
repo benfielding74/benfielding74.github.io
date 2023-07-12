@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SaaS vs Bespoke vs Enterprise on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/saas-vs-bespoke-vs-enterprise/</link>
+    <description>Recent content in SaaS vs Bespoke vs Enterprise on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Nov 2022 09:57:16 +0100</lastBuildDate><atom:link href="/tags/saas-vs-bespoke-vs-enterprise/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack 3985</title>
+      <link>/posts/hack-3985/</link>
+      <pubDate>Wed, 30 Nov 2022 09:57:16 +0100</pubDate>
+      
+      <guid>/posts/hack-3985/</guid>
+      <description>Situation Legacy accounts were created for dedicated applications which are now defunct with resources in these accounts still incurring costs to the organisation. Automating the deletion of AWS resources in legacy accounts is required for reducing costs and security risks.
+Task My colleague and I were tasked with auditing legacy accounts, recording costs, and creating a solution for automating the removal of resources after migrating application logs to a new and dedicated log account.</description>
+    </item>
+    
+  </channel>
+</rss>

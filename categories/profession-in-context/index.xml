@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>profession in context on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/categories/profession-in-context/</link>
+    <description>Recent content in profession in context on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2023 17:14:42 +0100</lastBuildDate><atom:link href="/categories/profession-in-context/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMI Refresh Project</title>
+      <link>/posts/ami-refresh-project/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/posts/ami-refresh-project/</guid>
+      <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface or servers and ensure they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
+    </item>
+    
+    <item>
+      <title>Hack Hw255</title>
+      <link>/posts/hack-hw255/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>/posts/hack-hw255/</guid>
+      <description>Situation A developer from one of the feature teams raised a ticket to be granted access to the production database. They have tested their requirement to provide reports against statistical data in a non production environment and now need production access to inform a local job service trial and future national reporting. They have already raised a ticket with the Secure Design Systems team and have been granted authorisation under DWP guidelines to access the production database for a defined time period.</description>
+    </item>
+    
+    <item>
+      <title>Hack 3985</title>
+      <link>/posts/hack-3985/</link>
+      <pubDate>Wed, 30 Nov 2022 09:57:16 +0100</pubDate>
+      
+      <guid>/posts/hack-3985/</guid>
+      <description>Situation Legacy accounts were created for dedicated applications which are now defunct with resources in these accounts still incurring costs to the organisation. Automating the deletion of AWS resources in legacy accounts is required for reducing costs and security risks.
+Task My colleague and I were tasked with auditing legacy accounts, recording costs, and creating a solution for automating the removal of resources after migrating application logs to a new and dedicated log account.</description>
+    </item>
+    
+    <item>
+      <title>hack-hw43</title>
+      <link>/posts/hack-hw43/</link>
+      <pubDate>Tue, 22 Nov 2022 15:55:12 +0000</pubDate>
+      
+      <guid>/posts/hack-hw43/</guid>
+      <description>Situation VPC flow logs are retained for 30 days in both prod and nonprod environments. Following an audit of logs a ticket was raised to investigate what our log retention periods should be and to make the required changes to our infrastructure.
+Task The scope of the ticket was to contact Secure Design Services to find out what log retention periods should be set at and then make the required changes to our core-infra stack to implement this.</description>
+    </item>
+    
+    <item>
+      <title>hack-3975</title>
+      <link>/posts/hack-3975/</link>
+      <pubDate>Thu, 30 Jun 2022 12:05:16 +0100</pubDate>
+      
+      <guid>/posts/hack-3975/</guid>
+      <description>Situation A request for a feature was added to team Kanban board. In a legacy project the Devs received a notification to a Slack channel whenever a file is added or deleted from their S3 buckets. They were requesting that this functionality be added to the current project.
+As a developer I would like to receive a notification into the #uc-far-prod-alerts Slack channel whenever an object is added to or deleted from the new S3 buckets.</description>
+    </item>
+    
+    <item>
+      <title>Release 0</title>
+      <link>/posts/release0/</link>
+      <pubDate>Thu, 30 Jun 2022 10:26:56 +0100</pubDate>
+      
+      <guid>/posts/release0/</guid>
+      <description>Introduction About Me I am Ben Fielding and I work at Department for Work and Pensions, within the Digital Group, as an Apprentice DevOps engineer. My background is mainly in the private sector working within the parking industry. Some of my experience with technology was gained through configuring and repairing parking equipment. Prior to being made redundant in January 2020 I was department lead on a project to build and launch a parking app, which gave me some experience of writing tests, testing, doing user research and working in sprints.</description>
+    </item>
+    
+  </channel>
+</rss>

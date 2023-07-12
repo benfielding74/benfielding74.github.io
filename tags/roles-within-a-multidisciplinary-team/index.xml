@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>roles within a multidisciplinary team on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/roles-within-a-multidisciplinary-team/</link>
+    <description>Recent content in roles within a multidisciplinary team on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jun 2022 12:05:16 +0100</lastBuildDate><atom:link href="/tags/roles-within-a-multidisciplinary-team/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hack-3975</title>
+      <link>/posts/hack-3975/</link>
+      <pubDate>Thu, 30 Jun 2022 12:05:16 +0100</pubDate>
+      
+      <guid>/posts/hack-3975/</guid>
+      <description>Situation A request for a feature was added to team Kanban board. In a legacy project the Devs received a notification to a Slack channel whenever a file is added or deleted from their S3 buckets. They were requesting that this functionality be added to the current project.
+As a developer I would like to receive a notification into the #uc-far-prod-alerts Slack channel whenever an object is added to or deleted from the new S3 buckets.</description>
+    </item>
+    
+  </channel>
+</rss>

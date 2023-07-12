@@ -2,9 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Ben Fielding - Apprenticeship Portfolio</title>
-    <link>http://benfielding74.github.io/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Ben Fielding - Apprenticeship Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://benfielding74.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2023 17:14:42 +0100</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>communicating and knowledge sharing</title>
+      <link>/categories/communicating-and-knowledge-sharing/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/categories/communicating-and-knowledge-sharing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>peer review</title>
+      <link>/categories/peer-review/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/categories/peer-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>problem solving</title>
+      <link>/categories/problem-solving/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/categories/problem-solving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>profession in context</title>
+      <link>/categories/profession-in-context/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/categories/profession-in-context/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data ethics</title>
+      <link>/categories/data-ethics/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>/categories/data-ethics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tooling and technology</title>
+      <link>/categories/tooling-and-technology/</link>
+      <pubDate>Wed, 30 Nov 2022 09:57:16 +0100</pubDate>
+      
+      <guid>/categories/tooling-and-technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>organisational culture</title>
+      <link>/categories/organisational-culture/</link>
+      <pubDate>Tue, 18 Oct 2022 14:00:48 +0100</pubDate>
+      
+      <guid>/categories/organisational-culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>continuous learning and development</title>
+      <link>/categories/continuous-learning-and-development/</link>
+      <pubDate>Thu, 30 Jun 2022 10:26:56 +0100</pubDate>
+      
+      <guid>/categories/continuous-learning-and-development/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>job requirements on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/job-requirements/</link>
+    <description>Recent content in job requirements on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jun 2022 13:43:06 +0100</lastBuildDate><atom:link href="/tags/job-requirements/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Self Led Learning</title>
+      <link>/posts/self-led-learning/</link>
+      <pubDate>Wed, 29 Jun 2022 13:43:06 +0100</pubDate>
+      
+      <guid>/posts/self-led-learning/</guid>
+      <description>Team specific courses undertaken during my apprenticeship
+Course title Provider Link to course content Time spent completing Tools and Technologies covered Setting Up Lambda Functions with S3 Event Triggers Cloud Guru Examples of course content 1 Hour AWS IAM, SNS, Lambda, s3api Hashicorp Certified: Terraform Associate Pluralsight Examples of course content 8 hours Hashicorp Terraform Certification Path Technical Writing Courses Google https://developers.google.com/tech-writing 2 hours Covering how to write effective technical documents Network Concepts and Protocols Pluralsight Examples of course content 3 hours CompTIA Network+ Path Getting Started With Linux Pluralsight Examples of course content 1 Hour 44 minutes LPI Linux Essentials Path Understanding IAM AWS Tech Enablement session Examples of course content 1 hour Covering IAM foundation principles, writing IAM policies and working towards least privilege Applying Professional Scrum Quanta Training https://www.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>non-technical on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/non-technical/</link>
+    <description>Recent content in non-technical on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Aug 2022 15:49:39 +0100</lastBuildDate><atom:link href="/tags/non-technical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Devops Presentation</title>
+      <link>/posts/devops-presentation/</link>
+      <pubDate>Mon, 22 Aug 2022 15:49:39 +0100</pubDate>
+      
+      <guid>/posts/devops-presentation/</guid>
+      <description>Situation Within DWP Digital we have a Portfolio team who have overall responsibility for the products and feature teams. When our team need to give updates on progress with platform infrastructure for apps or new products there is sometimes confusion about the tools, processes and language we use as the team is non-technical.
+Task Myself and another apprentice were asked if we would prepare and deliver a 15 minute presentation to facilitate knowledge sharing with the Portfolio team.</description>
+    </item>
+    
+  </channel>
+</rss>

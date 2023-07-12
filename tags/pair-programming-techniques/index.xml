@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>pair programming techniques on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/pair-programming-techniques/</link>
+    <description>Recent content in pair programming techniques on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Nov 2022 15:55:12 +0000</lastBuildDate><atom:link href="/tags/pair-programming-techniques/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hack-hw43</title>
+      <link>/posts/hack-hw43/</link>
+      <pubDate>Tue, 22 Nov 2022 15:55:12 +0000</pubDate>
+      
+      <guid>/posts/hack-hw43/</guid>
+      <description>Situation VPC flow logs are retained for 30 days in both prod and nonprod environments. Following an audit of logs a ticket was raised to investigate what our log retention periods should be and to make the required changes to our infrastructure.
+Task The scope of the ticket was to contact Secure Design Services to find out what log retention periods should be set at and then make the required changes to our core-infra stack to implement this.</description>
+    </item>
+    
+  </channel>
+</rss>

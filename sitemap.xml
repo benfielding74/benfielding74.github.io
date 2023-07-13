@@ -2,55 +2,207 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://benfielding74.github.io/</loc>
-    <lastmod>2023-05-22T18:12:03+01:00</lastmod>
+    <loc>/posts/ami-refresh-project/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/hack-4235/</loc>
-    <lastmod>2023-05-22T18:12:03+01:00</lastmod>
+    <loc>/tags/architecture/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/</loc>
-    <lastmod>2023-05-22T18:12:03+01:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/hack-hw255/</loc>
+    <loc>/categories/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/categories/communicating-and-knowledge-sharing/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/tags/communicating-credibly/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/tags/different-methods-of-communication/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/tags/modelling-techniques/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/categories/peer-review/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/categories/problem-solving/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/categories/profession-in-context/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/tags/roles-within-a-multi-disciplinary-team/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/tags/show-and-tell/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-05-28T17:14:42+01:00</lastmod>
+  </url><url>
+    <loc>/posts/hack-4361/</loc>
+    <lastmod>2023-01-23T18:57:19+01:00</lastmod>
+  </url><url>
+    <loc>/tags/current-or-future-regulatory-requirements/</loc>
     <lastmod>2023-01-05T12:13:26+00:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/hack-3985/</loc>
+    <loc>/categories/data-ethics/</loc>
+    <lastmod>2023-01-05T12:13:26+00:00</lastmod>
+  </url><url>
+    <loc>/tags/data-protection-policy-and-legislation/</loc>
+    <lastmod>2023-01-05T12:13:26+00:00</lastmod>
+  </url><url>
+    <loc>/tags/engaging-in-peer-review-practices/</loc>
+    <lastmod>2023-01-05T12:13:26+00:00</lastmod>
+  </url><url>
+    <loc>/posts/hack-hw255/</loc>
+    <lastmod>2023-01-05T12:13:26+00:00</lastmod>
+  </url><url>
+    <loc>/tags/how-to-use-data-ethically/</loc>
+    <lastmod>2023-01-05T12:13:26+00:00</lastmod>
+  </url><url>
+    <loc>/tags/learning-from-others/</loc>
+    <lastmod>2023-01-05T12:13:26+00:00</lastmod>
+  </url><url>
+    <loc>/tags/sharing-best-practice/</loc>
+    <lastmod>2023-01-05T12:13:26+00:00</lastmod>
+  </url><url>
+    <loc>/tags/agile/</loc>
     <lastmod>2022-11-30T09:57:16+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/hack-hw43/</loc>
+    <loc>/tags/collaboration/</loc>
+    <lastmod>2022-11-30T09:57:16+01:00</lastmod>
+  </url><url>
+    <loc>/posts/hack-3985/</loc>
+    <lastmod>2022-11-30T09:57:16+01:00</lastmod>
+  </url><url>
+    <loc>/tags/multidisciplinary-teams/</loc>
+    <lastmod>2022-11-30T09:57:16+01:00</lastmod>
+  </url><url>
+    <loc>/tags/saas-vs-bespoke-vs-enterprise/</loc>
+    <lastmod>2022-11-30T09:57:16+01:00</lastmod>
+  </url><url>
+    <loc>/categories/tooling-and-technology/</loc>
+    <lastmod>2022-11-30T09:57:16+01:00</lastmod>
+  </url><url>
+    <loc>/tags/engage-in-productive-pair-programming/</loc>
     <lastmod>2022-11-22T15:55:12+00:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/hack-hw98/</loc>
+    <loc>/posts/hack-hw43/</loc>
+    <lastmod>2022-11-22T15:55:12+00:00</lastmod>
+  </url><url>
+    <loc>/tags/how-their-occupation-fits-into-the-wider-digital-landscape/</loc>
+    <lastmod>2022-11-22T15:55:12+00:00</lastmod>
+  </url><url>
+    <loc>/tags/interfaces-with-other-areas-of-an-organisation/</loc>
+    <lastmod>2022-11-22T15:55:12+00:00</lastmod>
+  </url><url>
+    <loc>/tags/pair-programming-techniques/</loc>
+    <lastmod>2022-11-22T15:55:12+00:00</lastmod>
+  </url><url>
+    <loc>/tags/regulatory-requirements/</loc>
+    <lastmod>2022-11-22T15:55:12+00:00</lastmod>
+  </url><url>
+    <loc>/posts/hack-4235/</loc>
+    <lastmod>2022-10-22T18:12:03+01:00</lastmod>
+  </url><url>
+    <loc>/tags/plan-do-check-act/</loc>
+    <lastmod>2022-10-22T18:12:03+01:00</lastmod>
+  </url><url>
+    <loc>/tags/problem-solving-techniques/</loc>
+    <lastmod>2022-10-22T18:12:03+01:00</lastmod>
+  </url><url>
+    <loc>/tags/affinity-mapping/</loc>
     <lastmod>2022-10-18T14:00:48+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/devops-presentation/</loc>
+    <loc>/tags/blameless-culture/</loc>
+    <lastmod>2022-10-18T14:00:48+01:00</lastmod>
+  </url><url>
+    <loc>/tags/continuous-improvement/</loc>
+    <lastmod>2022-10-18T14:00:48+01:00</lastmod>
+  </url><url>
+    <loc>/posts/hack-hw98/</loc>
+    <lastmod>2022-10-18T14:00:48+01:00</lastmod>
+  </url><url>
+    <loc>/tags/knowledge-sharing/</loc>
+    <lastmod>2022-10-18T14:00:48+01:00</lastmod>
+  </url><url>
+    <loc>/categories/organisational-culture/</loc>
+    <lastmod>2022-10-18T14:00:48+01:00</lastmod>
+  </url><url>
+    <loc>/tags/problem-solving/</loc>
+    <lastmod>2022-10-18T14:00:48+01:00</lastmod>
+  </url><url>
+    <loc>/tags/taking-ownership/</loc>
+    <lastmod>2022-10-18T14:00:48+01:00</lastmod>
+  </url><url>
+    <loc>/posts/devops-presentation/</loc>
     <lastmod>2022-08-22T15:49:39+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/hack-3975/</loc>
+    <loc>/tags/non-technical/</loc>
+    <lastmod>2022-08-22T15:49:39+01:00</lastmod>
+  </url><url>
+    <loc>/tags/presentation/</loc>
+    <lastmod>2022-08-22T15:49:39+01:00</lastmod>
+  </url><url>
+    <loc>/tags/working-as-part-of-a-collaborative-community/</loc>
+    <lastmod>2022-08-22T15:49:39+01:00</lastmod>
+  </url><url>
+    <loc>/posts/hack-3975/</loc>
     <lastmod>2022-06-30T12:05:16+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/release0/</loc>
+    <loc>/tags/roles-within-a-multidisciplinary-team/</loc>
+    <lastmod>2022-06-30T12:05:16+01:00</lastmod>
+  </url><url>
+    <loc>/categories/continuous-learning-and-development/</loc>
     <lastmod>2022-06-30T10:26:56+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/reference-list/</loc>
+    <loc>/tags/invests-time-and-effort-into-their-own-development/</loc>
+    <lastmod>2022-06-30T10:26:56+01:00</lastmod>
+  </url><url>
+    <loc>/tags/multi-disciplinary-teams/</loc>
+    <lastmod>2022-06-30T10:26:56+01:00</lastmod>
+  </url><url>
+    <loc>/posts/release0/</loc>
+    <lastmod>2022-06-30T10:26:56+01:00</lastmod>
+  </url><url>
+    <loc>/posts/reference-list/</loc>
     <lastmod>2022-06-29T14:59:39+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/self-led-learning-examples/</loc>
+    <loc>/posts/self-led-learning-examples/</loc>
     <lastmod>2022-06-29T13:44:06+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/self-led-learning/</loc>
+    <loc>/tags/cloud-certification/</loc>
     <lastmod>2022-06-29T13:43:06+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/work-mapping-table/</loc>
+    <loc>/tags/continuous-learning/</loc>
+    <lastmod>2022-06-29T13:43:06+01:00</lastmod>
+  </url><url>
+    <loc>/tags/development/</loc>
+    <lastmod>2022-06-29T13:43:06+01:00</lastmod>
+  </url><url>
+    <loc>/tags/job-requirements/</loc>
+    <lastmod>2022-06-29T13:43:06+01:00</lastmod>
+  </url><url>
+    <loc>/posts/self-led-learning/</loc>
+    <lastmod>2022-06-29T13:43:06+01:00</lastmod>
+  </url><url>
+    <loc>/tags/technology/</loc>
+    <lastmod>2022-06-29T13:43:06+01:00</lastmod>
+  </url><url>
+    <loc>/posts/work-mapping-table/</loc>
     <lastmod>2022-06-29T12:05:16+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/posts/key-skills-matrix/</loc>
+    <loc>/posts/key-skills-matrix/</loc>
     <lastmod>2022-06-28T12:05:16+01:00</lastmod>
   </url><url>
-    <loc>http://benfielding74.github.io/categories/</loc>
-  </url><url>
-    <loc>http://benfielding74.github.io/contents/</loc>
-  </url><url>
-    <loc>http://benfielding74.github.io/tags/</loc>
+    <loc>/contents/</loc>
   </url>
 </urlset>

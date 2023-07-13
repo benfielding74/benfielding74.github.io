@@ -6,18 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Hack Hw255 | Ben Fielding - Apprenticeship Portfolio</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="current or future regulatory requirements, sharing best practice, engaging in peer review practices, learning from others, how to use data ethically, data protection policy and legislation">
 <meta name="description" content="Situation A developer from one of the feature teams raised a ticket to be granted access to the production database. They have tested their requirement to provide reports against statistical data in a non production environment and now need production access to inform a local job service trial and future national reporting. They have already raised a ticket with the Secure Design Systems team and have been granted authorisation under DWP guidelines to access the production database for a defined time period.">
 <meta name="author" content="">
-<link rel="canonical" href="http://benfielding74.github.io/posts/hack-hw255/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.ca2379a219b94338fa25ad46de2ba0c479f7223b218bb227e0c5471511d4d892.css" integrity="sha256-yiN5ohm5Qzj6Ja1G3iugxHn3Ijshi7In4MVHFRHU2JI=" rel="preload stylesheet" as="style">
+<link rel="canonical" href="/posts/hack-hw255/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a8004b0d4af4113e0b10450304de95044c286fb2526cd887ce1059a6a0ddb0a5.css" integrity="sha256-qABLDUr0ET4LEEUDBN6VBEwob7JSbNiHzhBZpqDdsKU=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="http://benfielding74.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://benfielding74.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://benfielding74.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://benfielding74.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="http://benfielding74.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <noscript>
@@ -59,7 +59,7 @@
 </noscript><meta property="og:title" content="Hack Hw255" />
 <meta property="og:description" content="Situation A developer from one of the feature teams raised a ticket to be granted access to the production database. They have tested their requirement to provide reports against statistical data in a non production environment and now need production access to inform a local job service trial and future national reporting. They have already raised a ticket with the Secure Design Systems team and have been granted authorisation under DWP guidelines to access the production database for a defined time period." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://benfielding74.github.io/posts/hack-hw255/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="/posts/hack-hw255/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-01-05T12:13:26&#43;00:00" />
 <meta property="article:modified_time" content="2023-01-05T12:13:26&#43;00:00" />
 
@@ -77,13 +77,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://benfielding74.github.io/posts/"
-    }, 
+      "item": "/posts/"
+    }
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Hack Hw255",
-      "item": "http://benfielding74.github.io/posts/hack-hw255/"
+      "item": "/posts/hack-hw255/"
     }
   ]
 }
@@ -96,7 +96,7 @@
   "name": "Hack Hw255",
   "description": "Situation A developer from one of the feature teams raised a ticket to be granted access to the production database. They have tested their requirement to provide reports against statistical data in a non production environment and now need production access to inform a local job service trial and future national reporting. They have already raised a ticket with the Secure Design Systems team and have been granted authorisation under DWP guidelines to access the production database for a defined time period.",
   "keywords": [
-    
+    "current or future regulatory requirements", "sharing best practice", "engaging in peer review practices", "learning from others", "how to use data ethically", "data protection policy and legislation"
   ],
   "articleBody": "Situation A developer from one of the feature teams raised a ticket to be granted access to the production database. They have tested their requirement to provide reports against statistical data in a non production environment and now need production access to inform a local job service trial and future national reporting. They have already raised a ticket with the Secure Design Systems team and have been granted authorisation under DWP guidelines to access the production database for a defined time period.\nTask SDS have granted permissions for the developer to have Read Only access to the production database and write access to Charts in Mongodb Atlas in line with current security policies and clearances and the Data Protection act 2018. My task is to explore roles and permissions with mongodb atlas Charts to provide the minimum amount of access to the production database whilst still being able to fully use the charts feature and then to implement this in the existing Terraform project stack before documenting the changes.\nActions My first step was to review the current Terraform code to see how the data access was currently granted in non prod and what permissions were already in place. This gave me some idea of how permissions currently worked. Users are added to a user group within the Terraform project with roles defined such as Project Owner, Admin Access, Read Only Access. This access is in place for all team members for non production databases with dummy data. For any production access clearance must be granted by Secure Design Systems before anything is implemented by our team as this gives full access to live customer data. In order to ensure that we are using customer data ethically and in line with current data protection legislation, we only grant this access to those that have security clearance and have a legitimate business reason for accessing this data. Data protection legislation can help ensure that companies are held accountable for their use of customer data. Companies may be required to report data breaches or other incidents that could put customer data at risk, and may face penalties if they fail to comply with data protection regulations.(K22) By protecting the privacy of our customers and being accountable for how we use their data, it maintains public trust in the DWP and the services that we provide. (K3)\nI found I could grant a level of Read and Write access to the production database with existing roles. I researched the different roles on the MongoDb website and found a blog post titled ‘Providing Least Privileged Data Access in MongoDb which was very helpful.(5) Least privileged Access (LPA) is the principle that a user should be granted access only to the data and operations required to complete a specific task, and then only for as long as needed. I went through the MongoDB documentation for both database access and Charts access. I then tested my access and the process to create charts so I could see what the least possible access would be needed to be able to create charts. The process to do this is to create a Charts user and then select the Database and Fields that you wish to use.\nI would need to grant Database Read Access, which is a level of access above Read Only, which allows the user to select and get data. In peer review with my team, seniors didn’t think this level of access was within the scope of the SDS ticket and so I needed to clarify with SDS if this would be ok. It was also suggested that I should raise a support ticket with MongoDB to confirm the minimum access level to the database to create charts. SDS confirmed that the developers had the necessary security clearance to have full access to the production database for the duration of their task as long as this was subsequently revoked and no access was granted to any other databases. I also received a response from MongoDB support confirming that the level of access I would need to give for Charts functionality would be the Database Read access that I had identified through my research.\nI documented the process and applied everything in Terraform so it was a repeatable process and then put in a merge request for my branch. I also commented the code to identify that this was a temporary change. My code was reviewed by a senior engineer and he suggested a refactor using existing resource blocks in the Terraform. I changed my code in line with his suggestion and then put in a second merge request which was accepted and merged to the master branch.\nFig 1: Example of adding permissions for users as part of a user group\nResult. The result of my implementation of Charts functionality for the feature team, in the way that I implemented it, was to successfully give the correct level of access to the production database using Terraform so that it can it can be easily repeated and the access can be easily revoked by targeting a Terraform apply against just the mongodb module. This is a benefit to both the feature team and the infrastructure team as I have carried out all of the research to ensure it gives least privileged access and I have implemented it using an Infrastructure as Code approach which can be quickly and easily repeated. This also has benefits for DWP as it ensures that the business complies with the Data Protection legislation and access is granted appropriately, protecting customers data and privacy.\nDuring the Sprint Review I had the opportunity to talk about the work that I had completed and subject my solution and documentation to the scrutiny of my peers in the team.(B1) I learnt about Charts functionality in MongoDB and about levels of access and security and about always being sure to use the least privileged access. In my reading and research I learnt more about Data Protection and our responsibility to protect customers data and privacy by only granting access to the data that is required to fulfil a task and then only for as long as this access is needed.\n",
   "wordCount" : "1034",
@@ -105,14 +105,14 @@
   "dateModified": "2023-01-05T12:13:26Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://benfielding74.github.io/posts/hack-hw255/"
+    "@id": "/posts/hack-hw255/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Ben Fielding - Apprenticeship Portfolio",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://benfielding74.github.io/favicon.ico"
+      "url": "/favicon.ico"
     }
   }
 }
@@ -134,7 +134,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://benfielding74.github.io/" accesskey="h" title="Ben Fielding - Apprenticeship Portfolio (Alt + H)">Ben Fielding - Apprenticeship Portfolio</a>
+            <a href="/" accesskey="h" title="Ben Fielding - Apprenticeship Portfolio (Alt + H)">Ben Fielding - Apprenticeship Portfolio</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -160,7 +160,12 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://benfielding74.github.io/contents/" title="contents">
+                <a href="/categories/" title="categories">
+                    <span><i class='fa fa-heart'></i>categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="/contents/" title="contents">
                     <span><i class='fa fa-heart'></i>contents</span>
                 </a>
             </li>
@@ -184,8 +189,8 @@
 <h3 id="task">Task<a hidden class="anchor" aria-hidden="true" href="#task">#</a></h3>
 <p>SDS have granted permissions for the developer to have Read Only access to the production database and write access to Charts in Mongodb Atlas in line with current security policies and clearances and the Data Protection act 2018. My task is to explore roles and permissions with mongodb atlas Charts to provide the minimum amount of access to the production database whilst still being able to fully use the charts feature and then to implement this in the existing Terraform project stack before documenting the changes.</p>
 <h3 id="actions">Actions<a hidden class="anchor" aria-hidden="true" href="#actions">#</a></h3>
-<p>My first step was to review the current Terraform code to see how the data access was currently granted in non prod and what permissions were already in place. This gave me some idea of how permissions currently worked. Users are added to a user group within the Terraform project with roles defined such as Project Owner, Admin Access, Read Only Access. This access is in place for all team members for non production databases with dummy data. For any production access clearance must be granted by Secure Design Systems before anything is implemented by our team as this gives full access to live customer data. In order to ensure that we are using customer data ethically and in line with current data protection legislation, we only grant this access to those that have security clearance and have a legitimate business reason for accessing this data. Data protection legislation can help ensure that companies are held accountable for their use of customer data. Companies may be required to report data breaches or other incidents that could put customer data at risk, and may face penalties if they fail to comply with data protection regulations.<a href="http://benfielding74.github.io/posts/work-mapping-table/#K22.2">(<em>K22</em>)</a> By protecting the privacy of our customers and being accountable for how we use their data, it maintains public trust in the DWP and the services that we provide. <a href="http://benfielding74.github.io/posts/work-mapping-table/#K3">(<em>K3</em>)</a></p>
-<p>I found I could grant a level of Read and Write access to the production database with existing roles. I researched the different roles on the MongoDb website and found a blog post titled ‘Providing Least Privileged Data Access in MongoDb which was very helpful.<a href="http://benfielding74.github.io/posts/reference-list/#5">(<em>5</em>)</a> Least privileged Access (LPA) is the principle that a user should be granted access only to the data and operations required to complete a specific task, and then only for as long as needed. I went through the MongoDB documentation for both database access and Charts access. I then tested my access and the process to create charts so I could see what the least possible access would be needed to be able to create charts. The process to do this is to create a Charts user and then select the Database and Fields that you wish to use.</p>
+<p>My first step was to review the current Terraform code to see how the data access was currently granted in non prod and what permissions were already in place. This gave me some idea of how permissions currently worked. Users are added to a user group within the Terraform project with roles defined such as Project Owner, Admin Access, Read Only Access. This access is in place for all team members for non production databases with dummy data. For any production access clearance must be granted by Secure Design Systems before anything is implemented by our team as this gives full access to live customer data. In order to ensure that we are using customer data ethically and in line with current data protection legislation, we only grant this access to those that have security clearance and have a legitimate business reason for accessing this data. Data protection legislation can help ensure that companies are held accountable for their use of customer data. Companies may be required to report data breaches or other incidents that could put customer data at risk, and may face penalties if they fail to comply with data protection regulations.<a href="/posts/work-mapping-table/#K22.2">(<em>K22</em>)</a> By protecting the privacy of our customers and being accountable for how we use their data, it maintains public trust in the DWP and the services that we provide. <a href="/posts/work-mapping-table/#K3">(<em>K3</em>)</a></p>
+<p>I found I could grant a level of Read and Write access to the production database with existing roles. I researched the different roles on the MongoDb website and found a blog post titled ‘Providing Least Privileged Data Access in MongoDb which was very helpful.<a href="/posts/reference-list/#5">(<em>5</em>)</a> Least privileged Access (LPA) is the principle that a user should be granted access only to the data and operations required to complete a specific task, and then only for as long as needed. I went through the MongoDB documentation for both database access and Charts access. I then tested my access and the process to create charts so I could see what the least possible access would be needed to be able to create charts. The process to do this is to create a Charts user and then select the Database and Fields that you wish to use.</p>
 <p>I would need to grant Database Read Access, which is a  level of access above Read Only, which allows the user to select and get data. In peer review with my team, seniors didn’t think this level of access was within the scope of the SDS ticket and so I needed to clarify with SDS if this would be ok. It was also suggested that I should raise a support ticket with MongoDB to confirm the minimum access level to the database to create charts. SDS confirmed that the developers had the necessary security clearance to have full access to the production database for the duration of their task as long as this was subsequently revoked and no access was granted to any other databases. I also received a response from MongoDB support confirming that the level of access I would need to give for Charts functionality would be the Database Read access that I had identified through my research.</p>
 <p>I documented the process and applied everything in Terraform so it was a repeatable process and then put in a merge request for my branch. I also commented the code to identify that this was a temporary change. My code was reviewed by a senior engineer and he suggested a refactor using existing resource blocks in the Terraform. I changed my code in line with his suggestion and then put in a second merge request which was accepted and merged to the master branch.</p>
 <p><img loading="lazy" src="adding_charts_permissions.png" alt="terraform solution for charts users"  />
@@ -193,25 +198,33 @@
 <em>Fig 1: Example of adding permissions for users as part of a user group</em></p>
 <h3 id="result">Result.<a hidden class="anchor" aria-hidden="true" href="#result">#</a></h3>
 <p>The result of my implementation of Charts functionality for the feature team, in the way that I implemented it, was to successfully give the correct level of access to the production database using Terraform so that it can it can be easily repeated and the access can be easily revoked by targeting a Terraform apply against just the mongodb module. This is a benefit to both the feature team and the infrastructure team as I have carried out all of the research to ensure it gives least privileged access and I have implemented it using an Infrastructure as Code approach which can be quickly and easily repeated. This also has benefits for DWP as it ensures that the business complies with the Data Protection legislation and access is granted appropriately, protecting customers data and privacy.</p>
-<p>During the Sprint Review I had the opportunity to talk about the work that I had completed and subject my solution and documentation to the scrutiny of my peers in the team.<a href="http://benfielding74.github.io/posts/work-mapping-table/#B1.1">(<em>B1</em>)</a> I learnt about Charts functionality in MongoDB and about levels of access and security and about always being sure to use the least privileged access. In my reading and research I learnt more about Data Protection and our responsibility to protect customers data and privacy by only granting access to the data that is required to fulfil a task and then only for as long as this access is needed.</p>
+<p>During the Sprint Review I had the opportunity to talk about the work that I had completed and subject my solution and documentation to the scrutiny of my peers in the team.<a href="/posts/work-mapping-table/#B1.1">(<em>B1</em>)</a> I learnt about Charts functionality in MongoDB and about levels of access and security and about always being sure to use the least privileged access. In my reading and research I learnt more about Data Protection and our responsibility to protect customers data and privacy by only granting access to the data that is required to fulfil a task and then only for as long as this access is needed.</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="/tags/current-or-future-regulatory-requirements/">current or future regulatory requirements</a></li>
+      <li><a href="/tags/sharing-best-practice/">sharing best practice</a></li>
+      <li><a href="/tags/engaging-in-peer-review-practices/">engaging in peer review practices</a></li>
+      <li><a href="/tags/learning-from-others/">learning from others</a></li>
+      <li><a href="/tags/how-to-use-data-ethically/">how to use data ethically</a></li>
+      <li><a href="/tags/data-protection-policy-and-legislation/">data protection policy and legislation</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="http://benfielding74.github.io/">Ben Fielding - Apprenticeship Portfolio</a> v2.3.3</span>
+    <span>&copy; 2023 <a href="/">Ben Fielding - Apprenticeship Portfolio</a></span>
+    <span>Version 2.3.1</span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
+
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

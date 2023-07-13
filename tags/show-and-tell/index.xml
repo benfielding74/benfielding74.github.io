@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>show and tell on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/show-and-tell/</link>
+    <description>Recent content in show and tell on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2023 17:14:42 +0100</lastBuildDate><atom:link href="/tags/show-and-tell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMI Refresh Project</title>
+      <link>/posts/ami-refresh-project/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/posts/ami-refresh-project/</guid>
+      <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface or servers and ensure they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
+    </item>
+    
+  </channel>
+</rss>

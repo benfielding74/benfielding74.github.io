@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Hack 4361 | Ben Fielding - Apprenticeship Portfolio</title>
+<meta name="keywords" content="">
+<meta name="description" content="Situation The Nomad health check for the Find and Refer kong-traefik service is failing1. Following Traefik deployment a smoke test is run, this test simply curls some endpoints specific to the deployment. A response code HTTP 200 is the expected response, anything else will cause the health check to fail. Some preliminary investigation has identified that the health check is curling an incorrect end point.
+Task The requirements of the ticket are to adjust the health check as neccessary and test in sandbox environment to ensure it&rsquo;s working.">
+<meta name="author" content="">
+<link rel="canonical" href="/posts/hack-4361/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a8004b0d4af4113e0b10450304de95044c286fb2526cd887ce1059a6a0ddb0a5.css" integrity="sha256-qABLDUr0ET4LEEUDBN6VBEwob7JSbNiHzhBZpqDdsKU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Hack 4361" />
+<meta property="og:description" content="Situation The Nomad health check for the Find and Refer kong-traefik service is failing1. Following Traefik deployment a smoke test is run, this test simply curls some endpoints specific to the deployment. A response code HTTP 200 is the expected response, anything else will cause the health check to fail. Some preliminary investigation has identified that the health check is curling an incorrect end point.
+Task The requirements of the ticket are to adjust the health check as neccessary and test in sandbox environment to ensure it&rsquo;s working." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/hack-4361/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-23T18:57:19&#43;01:00" />
+<meta property="article:modified_time" content="2023-01-23T18:57:19&#43;01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hack 4361"/>
+<meta name="twitter:description" content="Situation The Nomad health check for the Find and Refer kong-traefik service is failing1. Following Traefik deployment a smoke test is run, this test simply curls some endpoints specific to the deployment. A response code HTTP 200 is the expected response, anything else will cause the health check to fail. Some preliminary investigation has identified that the health check is curling an incorrect end point.
+Task The requirements of the ticket are to adjust the health check as neccessary and test in sandbox environment to ensure it&rsquo;s working."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Hack 4361",
+      "item": "/posts/hack-4361/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hack 4361",
+  "name": "Hack 4361",
+  "description": "Situation The Nomad health check for the Find and Refer kong-traefik service is failing1. Following Traefik deployment a smoke test is run, this test simply curls some endpoints specific to the deployment. A response code HTTP 200 is the expected response, anything else will cause the health check to fail. Some preliminary investigation has identified that the health check is curling an incorrect end point.\nTask The requirements of the ticket are to adjust the health check as neccessary and test in sandbox environment to ensure it\u0026rsquo;s working.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Situation The Nomad health check for the Find and Refer kong-traefik service is failing1. Following Traefik deployment a smoke test is run, this test simply curls some endpoints specific to the deployment. A response code HTTP 200 is the expected response, anything else will cause the health check to fail. Some preliminary investigation has identified that the health check is curling an incorrect end point.\nTask The requirements of the ticket are to adjust the health check as neccessary and test in sandbox environment to ensure it’s working.\nAction First I cloned the Traefik repo and ran a deployment in the sandbox environment so I could see what was currently happening. THe configuration was\ncheck { type = “http” port = “https” protocol = “https” tls_skip_verify = true path =“/healthcheck” interval = “30s” timeout = “15s” } Once I had deployed, the agent is alive and reachable but there was no output at all for the healthcheck. The gitlab pipeline fails with http error 000 suggesting timeout or nothing at all at the endpoint. A colleague suggested that the path value should be changed to /ping and looking at configuration for other healthchecks I saw that a lot of check protocols were set to http rather than https. I made these changes and deployed once again with the following configuration\ncheck { type = “http” port = “http” protocol = “http” tls_skip_verify = true path =“/ping” interval = “30s” timeout = “15s” } This configuration would not even allow the Traefik instance to deploy or become available though the Jenkins pipeline does not give any errors and suggests that the deployment has been successful. The Traefik documentation suggests that /ping is the correct endpoint but that does not work. The protocol does need to be https for a successful deployment. I also tried to run without a specific port value as suggested in some examples seen on the internet but that does not allow the Kong service to be configured and the deployment pipeline fails.\nI reviewed the documentation again and examined an existing job in Prometheus(which was working). What I discovered was that a ping endpoint has to be declared within the traefik-kong configuration before it is used in the check stanza. My final configuration was this\ntraefik-kong: dashboard:true insecure:true ping: entryPoint: \"traefik\" check { type = “http” port = “traefik” # which is hitting port 8081 for the healthcheck protocol = “http” tls_skip_verify = true path =“/ping” interval = “30s” timeout = “15s” } Result I applied this configuration in the sandbox environment and checked against the Consul UI that the healthcheck was returning a 200 code. Once this was confirmed I submitted a merge request. This was approved and I deployed to all non prod environments using the gitlab CI/CD pipelines and then carried out a targeted deployment to production suing Jenkins. This ticket was important for the team as the healthcheck is an important check that let’s us know our infrastructure is working and available and the apps that the feature teams deploy are accessible.\nThis ticket gave me an opportunity to learn about Traefik and reverse proxies. I learnt how they are configured and also learnt about carrying out healthchecks on endpoints adn the importance of this in monitoring our infrastructure.\nKong Gateway is a lightweight, fast, and flexible cloud-native API gateway. An API gateway is a reverse proxy that lets you manage, configure, and route requests to your APIs. Kong Gateway runs in front of any RESTful API and can be extended through modules and plugins. It’s designed to run on decentralized architectures, including hybrid-cloud and multi-cloud deployments. Traefik is a reverse proxy that sits between client requests and the backend services that handle those requests. It works by inspecting incoming requests and using a set of rules to determine how to route the request to the appropriate backend service ↩︎\n",
+  "wordCount" : "646",
+  "inLanguage": "en",
+  "datePublished": "2023-01-23T18:57:19+01:00",
+  "dateModified": "2023-01-23T18:57:19+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/hack-4361/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ben Fielding - Apprenticeship Portfolio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Ben Fielding - Apprenticeship Portfolio (Alt + H)">Ben Fielding - Apprenticeship Portfolio</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/categories/" title="categories">
+                    <span><i class='fa fa-heart'></i>categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="/contents/" title="contents">
+                    <span><i class='fa fa-heart'></i>contents</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Hack 4361
+    </h1>
+    <div class="post-meta"><span title='2023-01-23 18:57:19 +0100 +0100'>January 23, 2023</span>&nbsp;|&nbsp;<a href="https://github.com/benfielding74/apprentice-portfolio/tree/main/content/posts/hack-4361/index.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> 
+  <div class="post-content"><h3 id="situation">Situation<a hidden class="anchor" aria-hidden="true" href="#situation">#</a></h3>
+<p>The Nomad health check for the Find and Refer kong-traefik service is failing<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Following Traefik deployment a smoke test is run, this test simply curls some endpoints specific to the deployment. A response code HTTP 200 is the expected response, anything else will cause the health check to fail. Some preliminary investigation has identified that the health check is curling an incorrect end point.</p>
+<h3 id="task">Task<a hidden class="anchor" aria-hidden="true" href="#task">#</a></h3>
+<p>The requirements of the ticket are to adjust the health check as neccessary and test in sandbox environment to ensure it&rsquo;s working.</p>
+<h3 id="action">Action<a hidden class="anchor" aria-hidden="true" href="#action">#</a></h3>
+<p>First I cloned the Traefik repo and ran a deployment in the sandbox environment so I could see what was currently happening. THe configuration was</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-hcl" data-lang="hcl"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">check</span> { 
+</span></span><span style="display:flex;"><span>  type <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#66d9ef">http</span><span style="color:#960050;background-color:#1e0010">”</span>
+</span></span><span style="display:flex;"><span>  port <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#66d9ef">https</span><span style="color:#960050;background-color:#1e0010">”</span> 
+</span></span><span style="display:flex;"><span>  protocol <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#66d9ef">https</span><span style="color:#960050;background-color:#1e0010">”</span> 
+</span></span><span style="display:flex;"><span>  tls_skip_verify <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> 
+</span></span><span style="display:flex;"><span>  path <span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">“/</span><span style="color:#66d9ef">healthcheck</span><span style="color:#960050;background-color:#1e0010">”</span> 
+</span></span><span style="display:flex;"><span>  interval <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#ae81ff">30</span><span style="color:#960050;background-color:#1e0010">s”</span> 
+</span></span><span style="display:flex;"><span>  timeout <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#ae81ff">15</span><span style="color:#960050;background-color:#1e0010">s”</span> 
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>Once I had deployed, the agent is alive and reachable but there was no output at all for the healthcheck. The gitlab pipeline fails with <code>http error 000</code> suggesting timeout or nothing at all at the endpoint. A colleague suggested that the path value should be changed to <code>/ping</code> and looking at configuration for other healthchecks I saw that a lot of check protocols were set to <code>http</code> rather than <code>https</code>. I made these changes and deployed once again with the following configuration</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-hcl" data-lang="hcl"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">check</span> { 
+</span></span><span style="display:flex;"><span>  type <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#66d9ef">http</span><span style="color:#960050;background-color:#1e0010">”</span>
+</span></span><span style="display:flex;"><span>  port <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#66d9ef">http</span><span style="color:#960050;background-color:#1e0010">”</span> 
+</span></span><span style="display:flex;"><span>  protocol <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#66d9ef">http</span><span style="color:#960050;background-color:#1e0010">”</span> 
+</span></span><span style="display:flex;"><span>  tls_skip_verify <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> 
+</span></span><span style="display:flex;"><span>  path <span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">“/</span><span style="color:#66d9ef">ping</span><span style="color:#960050;background-color:#1e0010">”</span> 
+</span></span><span style="display:flex;"><span>  interval <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#ae81ff">30</span><span style="color:#960050;background-color:#1e0010">s”</span> 
+</span></span><span style="display:flex;"><span>  timeout <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#ae81ff">15</span><span style="color:#960050;background-color:#1e0010">s”</span> 
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>This configuration would not even allow the Traefik instance to deploy or become available though the Jenkins pipeline does not give any errors and suggests that the deployment has been successful. The Traefik documentation suggests that <code>/ping</code> is the correct endpoint but that does not work. The protocol does need to be <code>https</code> for a successful deployment. I also tried to run without a specific port value as suggested in some examples seen on the internet but that does not allow the Kong service to be configured and the deployment pipeline fails.</p>
+<p>I reviewed the documentation again and examined an existing job in Prometheus(which was working). What I discovered was that a ping endpoint has to be declared within the traefik-kong configuration before it is used in the check stanza. My final configuration was this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-hcl" data-lang="hcl"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">traefik</span><span style="color:#960050;background-color:#1e0010">-</span><span style="color:#66d9ef">kong</span><span style="color:#960050;background-color:#1e0010">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">dashboard</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">insecure</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">ping</span><span style="color:#960050;background-color:#1e0010">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">entryPoint</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;traefik&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">check</span> { 
+</span></span><span style="display:flex;"><span>  type <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#66d9ef">http</span><span style="color:#960050;background-color:#1e0010">”</span>
+</span></span><span style="display:flex;"><span>  port <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#66d9ef">traefik</span><span style="color:#960050;background-color:#1e0010">”</span><span style="color:#75715e"> # which is hitting port 8081 for the healthcheck
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  protocol <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#66d9ef">http</span><span style="color:#960050;background-color:#1e0010">”</span> 
+</span></span><span style="display:flex;"><span>  tls_skip_verify <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> 
+</span></span><span style="display:flex;"><span>  path <span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">“/</span><span style="color:#66d9ef">ping</span><span style="color:#960050;background-color:#1e0010">”</span> 
+</span></span><span style="display:flex;"><span>  interval <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#ae81ff">30</span><span style="color:#960050;background-color:#1e0010">s”</span> 
+</span></span><span style="display:flex;"><span>  timeout <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">“</span><span style="color:#ae81ff">15</span><span style="color:#960050;background-color:#1e0010">s”</span> 
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><h3 id="result">Result<a hidden class="anchor" aria-hidden="true" href="#result">#</a></h3>
+<p>I applied this configuration in the sandbox environment and checked against the Consul UI that the healthcheck was returning a 200 code. Once this was confirmed I submitted a merge request. This was approved and I deployed to all non prod environments using the gitlab CI/CD pipelines and then carried out a targeted deployment to production suing Jenkins. This ticket was important for the team as the healthcheck is an important check that let&rsquo;s us know our infrastructure is working and available and the apps that the feature teams deploy are accessible.</p>
+<p>This ticket gave me an opportunity to learn about Traefik and reverse proxies. I learnt how they are configured and also learnt about carrying out healthchecks on endpoints adn the importance of this in monitoring our infrastructure.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><em><strong>Kong Gateway</strong> is a lightweight, fast, and flexible cloud-native API gateway. An API gateway is a reverse proxy that lets you manage, configure, and route requests to your APIs. Kong Gateway runs in front of any RESTful API and can be extended through modules and plugins. It’s designed to run on decentralized architectures, including hybrid-cloud and multi-cloud deployments. <strong>Traefik</strong> is a reverse proxy that sits between client requests and the backend services that handle those requests. It works by inspecting incoming requests and using a set of rules to determine how to route the request to the appropriate backend service</em>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="/">Ben Fielding - Apprenticeship Portfolio</a></span>
+    <span>Version 2.3.1</span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

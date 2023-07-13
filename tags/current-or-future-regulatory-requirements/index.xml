@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>current or future regulatory requirements on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/current-or-future-regulatory-requirements/</link>
+    <description>Recent content in current or future regulatory requirements on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jan 2023 12:13:26 +0000</lastBuildDate><atom:link href="/tags/current-or-future-regulatory-requirements/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack Hw255</title>
+      <link>/posts/hack-hw255/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>/posts/hack-hw255/</guid>
+      <description>Situation A developer from one of the feature teams raised a ticket to be granted access to the production database. They have tested their requirement to provide reports against statistical data in a non production environment and now need production access to inform a local job service trial and future national reporting. They have already raised a ticket with the Secure Design Systems team and have been granted authorisation under DWP guidelines to access the production database for a defined time period.</description>
+    </item>
+    
+  </channel>
+</rss>

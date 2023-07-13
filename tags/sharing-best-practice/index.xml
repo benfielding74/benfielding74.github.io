@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>sharing best practice on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/sharing-best-practice/</link>
+    <description>Recent content in sharing best practice on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jan 2023 12:13:26 +0000</lastBuildDate><atom:link href="/tags/sharing-best-practice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack Hw255</title>
+      <link>/posts/hack-hw255/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>/posts/hack-hw255/</guid>
+      <description>Situation A developer from one of the feature teams raised a ticket to be granted access to the production database. They have tested their requirement to provide reports against statistical data in a non production environment and now need production access to inform a local job service trial and future national reporting. They have already raised a ticket with the Secure Design Systems team and have been granted authorisation under DWP guidelines to access the production database for a defined time period.</description>
+    </item>
+    
+    <item>
+      <title>Devops Presentation</title>
+      <link>/posts/devops-presentation/</link>
+      <pubDate>Mon, 22 Aug 2022 15:49:39 +0100</pubDate>
+      
+      <guid>/posts/devops-presentation/</guid>
+      <description>Situation Within DWP Digital we have a Portfolio team who have overall responsibility for the products and feature teams. When our team need to give updates on progress with platform infrastructure for apps or new products there is sometimes confusion about the tools, processes and language we use as the team is non-technical.
+Task Myself and another apprentice were asked if we would prepare and deliver a 15 minute presentation to facilitate knowledge sharing with the Portfolio team.</description>
+    </item>
+    
+  </channel>
+</rss>

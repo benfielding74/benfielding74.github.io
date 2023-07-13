@@ -2,9 +2,370 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Ben Fielding - Apprenticeship Portfolio</title>
-    <link>http://benfielding74.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Ben Fielding - Apprenticeship Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://benfielding74.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2023 17:14:42 +0100</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>architecture</title>
+      <link>/tags/architecture/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>communicating credibly</title>
+      <link>/tags/communicating-credibly/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/tags/communicating-credibly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>different methods of communication</title>
+      <link>/tags/different-methods-of-communication/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/tags/different-methods-of-communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>modelling techniques</title>
+      <link>/tags/modelling-techniques/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/tags/modelling-techniques/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>roles within a multi-disciplinary team</title>
+      <link>/tags/roles-within-a-multi-disciplinary-team/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/tags/roles-within-a-multi-disciplinary-team/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>show and tell</title>
+      <link>/tags/show-and-tell/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/tags/show-and-tell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>current or future regulatory requirements</title>
+      <link>/tags/current-or-future-regulatory-requirements/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>/tags/current-or-future-regulatory-requirements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data protection policy and legislation</title>
+      <link>/tags/data-protection-policy-and-legislation/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>/tags/data-protection-policy-and-legislation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>engaging in peer review practices</title>
+      <link>/tags/engaging-in-peer-review-practices/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>/tags/engaging-in-peer-review-practices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>how to use data ethically</title>
+      <link>/tags/how-to-use-data-ethically/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>/tags/how-to-use-data-ethically/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learning from others</title>
+      <link>/tags/learning-from-others/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>/tags/learning-from-others/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sharing best practice</title>
+      <link>/tags/sharing-best-practice/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>/tags/sharing-best-practice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>agile</title>
+      <link>/tags/agile/</link>
+      <pubDate>Wed, 30 Nov 2022 09:57:16 +0100</pubDate>
+      
+      <guid>/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>collaboration</title>
+      <link>/tags/collaboration/</link>
+      <pubDate>Wed, 30 Nov 2022 09:57:16 +0100</pubDate>
+      
+      <guid>/tags/collaboration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multidisciplinary teams</title>
+      <link>/tags/multidisciplinary-teams/</link>
+      <pubDate>Wed, 30 Nov 2022 09:57:16 +0100</pubDate>
+      
+      <guid>/tags/multidisciplinary-teams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SaaS vs Bespoke vs Enterprise</title>
+      <link>/tags/saas-vs-bespoke-vs-enterprise/</link>
+      <pubDate>Wed, 30 Nov 2022 09:57:16 +0100</pubDate>
+      
+      <guid>/tags/saas-vs-bespoke-vs-enterprise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>engage in productive pair programming</title>
+      <link>/tags/engage-in-productive-pair-programming/</link>
+      <pubDate>Tue, 22 Nov 2022 15:55:12 +0000</pubDate>
+      
+      <guid>/tags/engage-in-productive-pair-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>how their occupation fits into the wider digital landscape</title>
+      <link>/tags/how-their-occupation-fits-into-the-wider-digital-landscape/</link>
+      <pubDate>Tue, 22 Nov 2022 15:55:12 +0000</pubDate>
+      
+      <guid>/tags/how-their-occupation-fits-into-the-wider-digital-landscape/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>interfaces with other areas of an organisation</title>
+      <link>/tags/interfaces-with-other-areas-of-an-organisation/</link>
+      <pubDate>Tue, 22 Nov 2022 15:55:12 +0000</pubDate>
+      
+      <guid>/tags/interfaces-with-other-areas-of-an-organisation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pair programming techniques</title>
+      <link>/tags/pair-programming-techniques/</link>
+      <pubDate>Tue, 22 Nov 2022 15:55:12 +0000</pubDate>
+      
+      <guid>/tags/pair-programming-techniques/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>regulatory requirements</title>
+      <link>/tags/regulatory-requirements/</link>
+      <pubDate>Tue, 22 Nov 2022 15:55:12 +0000</pubDate>
+      
+      <guid>/tags/regulatory-requirements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plan-do-check-act</title>
+      <link>/tags/plan-do-check-act/</link>
+      <pubDate>Sat, 22 Oct 2022 18:12:03 +0100</pubDate>
+      
+      <guid>/tags/plan-do-check-act/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>problem solving techniques</title>
+      <link>/tags/problem-solving-techniques/</link>
+      <pubDate>Sat, 22 Oct 2022 18:12:03 +0100</pubDate>
+      
+      <guid>/tags/problem-solving-techniques/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>affinity mapping</title>
+      <link>/tags/affinity-mapping/</link>
+      <pubDate>Tue, 18 Oct 2022 14:00:48 +0100</pubDate>
+      
+      <guid>/tags/affinity-mapping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blameless culture</title>
+      <link>/tags/blameless-culture/</link>
+      <pubDate>Tue, 18 Oct 2022 14:00:48 +0100</pubDate>
+      
+      <guid>/tags/blameless-culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>continuous improvement</title>
+      <link>/tags/continuous-improvement/</link>
+      <pubDate>Tue, 18 Oct 2022 14:00:48 +0100</pubDate>
+      
+      <guid>/tags/continuous-improvement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>knowledge sharing</title>
+      <link>/tags/knowledge-sharing/</link>
+      <pubDate>Tue, 18 Oct 2022 14:00:48 +0100</pubDate>
+      
+      <guid>/tags/knowledge-sharing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>problem solving</title>
+      <link>/tags/problem-solving/</link>
+      <pubDate>Tue, 18 Oct 2022 14:00:48 +0100</pubDate>
+      
+      <guid>/tags/problem-solving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>taking ownership</title>
+      <link>/tags/taking-ownership/</link>
+      <pubDate>Tue, 18 Oct 2022 14:00:48 +0100</pubDate>
+      
+      <guid>/tags/taking-ownership/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>non-technical</title>
+      <link>/tags/non-technical/</link>
+      <pubDate>Mon, 22 Aug 2022 15:49:39 +0100</pubDate>
+      
+      <guid>/tags/non-technical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>presentation</title>
+      <link>/tags/presentation/</link>
+      <pubDate>Mon, 22 Aug 2022 15:49:39 +0100</pubDate>
+      
+      <guid>/tags/presentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>working as part of a collaborative community</title>
+      <link>/tags/working-as-part-of-a-collaborative-community/</link>
+      <pubDate>Mon, 22 Aug 2022 15:49:39 +0100</pubDate>
+      
+      <guid>/tags/working-as-part-of-a-collaborative-community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>roles within a multidisciplinary team</title>
+      <link>/tags/roles-within-a-multidisciplinary-team/</link>
+      <pubDate>Thu, 30 Jun 2022 12:05:16 +0100</pubDate>
+      
+      <guid>/tags/roles-within-a-multidisciplinary-team/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>invests time and effort into their own development</title>
+      <link>/tags/invests-time-and-effort-into-their-own-development/</link>
+      <pubDate>Thu, 30 Jun 2022 10:26:56 +0100</pubDate>
+      
+      <guid>/tags/invests-time-and-effort-into-their-own-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multi-disciplinary teams</title>
+      <link>/tags/multi-disciplinary-teams/</link>
+      <pubDate>Thu, 30 Jun 2022 10:26:56 +0100</pubDate>
+      
+      <guid>/tags/multi-disciplinary-teams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud certification</title>
+      <link>/tags/cloud-certification/</link>
+      <pubDate>Wed, 29 Jun 2022 13:43:06 +0100</pubDate>
+      
+      <guid>/tags/cloud-certification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>continuous learning</title>
+      <link>/tags/continuous-learning/</link>
+      <pubDate>Wed, 29 Jun 2022 13:43:06 +0100</pubDate>
+      
+      <guid>/tags/continuous-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>/tags/development/</link>
+      <pubDate>Wed, 29 Jun 2022 13:43:06 +0100</pubDate>
+      
+      <guid>/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>job requirements</title>
+      <link>/tags/job-requirements/</link>
+      <pubDate>Wed, 29 Jun 2022 13:43:06 +0100</pubDate>
+      
+      <guid>/tags/job-requirements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technology</title>
+      <link>/tags/technology/</link>
+      <pubDate>Wed, 29 Jun 2022 13:43:06 +0100</pubDate>
+      
+      <guid>/tags/technology/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

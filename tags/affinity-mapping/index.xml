@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>affinity mapping on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/affinity-mapping/</link>
+    <description>Recent content in affinity mapping on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Oct 2022 14:00:48 +0100</lastBuildDate><atom:link href="/tags/affinity-mapping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hack-hw98</title>
+      <link>/posts/hack-hw98/</link>
+      <pubDate>Tue, 18 Oct 2022 14:00:48 +0100</pubDate>
+      
+      <guid>/posts/hack-hw98/</guid>
+      <description>Situation A developer team working the Find and Refer service are alerted within a Slack channel when a file is added to some specific targeted AWS s3 buckets. They have made a request which has been added to the HACK team sprint as a working ticket. They have requested that &amp;rsquo;to support incident management and ease repetitive cognitive load&amp;rsquo; they would also like to be alerted when specific files have NOT been added to their buckets by a given time.</description>
+    </item>
+    
+  </channel>
+</rss>

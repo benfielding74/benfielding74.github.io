@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>different methods of communication on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/different-methods-of-communication/</link>
+    <description>Recent content in different methods of communication on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2023 17:14:42 +0100</lastBuildDate><atom:link href="/tags/different-methods-of-communication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMI Refresh Project</title>
+      <link>/posts/ami-refresh-project/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/posts/ami-refresh-project/</guid>
+      <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface or servers and ensure they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
+    </item>
+    
+    <item>
+      <title>hack-3975</title>
+      <link>/posts/hack-3975/</link>
+      <pubDate>Thu, 30 Jun 2022 12:05:16 +0100</pubDate>
+      
+      <guid>/posts/hack-3975/</guid>
+      <description>Situation A request for a feature was added to team Kanban board. In a legacy project the Devs received a notification to a Slack channel whenever a file is added or deleted from their S3 buckets. They were requesting that this functionality be added to the current project.
+As a developer I would like to receive a notification into the #uc-far-prod-alerts Slack channel whenever an object is added to or deleted from the new S3 buckets.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>communicating and knowledge sharing on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/categories/communicating-and-knowledge-sharing/</link>
+    <description>Recent content in communicating and knowledge sharing on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2023 17:14:42 +0100</lastBuildDate><atom:link href="/categories/communicating-and-knowledge-sharing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMI Refresh Project</title>
+      <link>/posts/ami-refresh-project/</link>
+      <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
+      
+      <guid>/posts/ami-refresh-project/</guid>
+      <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface or servers and ensure they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
+    </item>
+    
+    <item>
+      <title>Hack Hw255</title>
+      <link>/posts/hack-hw255/</link>
+      <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>
+      
+      <guid>/posts/hack-hw255/</guid>
+      <description>Situation A developer from one of the feature teams raised a ticket to be granted access to the production database. They have tested their requirement to provide reports against statistical data in a non production environment and now need production access to inform a local job service trial and future national reporting. They have already raised a ticket with the Secure Design Systems team and have been granted authorisation under DWP guidelines to access the production database for a defined time period.</description>
+    </item>
+    
+    <item>
+      <title>hack-hw98</title>
+      <link>/posts/hack-hw98/</link>
+      <pubDate>Tue, 18 Oct 2022 14:00:48 +0100</pubDate>
+      
+      <guid>/posts/hack-hw98/</guid>
+      <description>Situation A developer team working the Find and Refer service are alerted within a Slack channel when a file is added to some specific targeted AWS s3 buckets. They have made a request which has been added to the HACK team sprint as a working ticket. They have requested that &amp;rsquo;to support incident management and ease repetitive cognitive load&amp;rsquo; they would also like to be alerted when specific files have NOT been added to their buckets by a given time.</description>
+    </item>
+    
+    <item>
+      <title>Devops Presentation</title>
+      <link>/posts/devops-presentation/</link>
+      <pubDate>Mon, 22 Aug 2022 15:49:39 +0100</pubDate>
+      
+      <guid>/posts/devops-presentation/</guid>
+      <description>Situation Within DWP Digital we have a Portfolio team who have overall responsibility for the products and feature teams. When our team need to give updates on progress with platform infrastructure for apps or new products there is sometimes confusion about the tools, processes and language we use as the team is non-technical.
+Task Myself and another apprentice were asked if we would prepare and deliver a 15 minute presentation to facilitate knowledge sharing with the Portfolio team.</description>
+    </item>
+    
+  </channel>
+</rss>

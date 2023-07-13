@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>agile on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/agile/</link>
+    <description>Recent content in agile on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Nov 2022 09:57:16 +0100</lastBuildDate><atom:link href="/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack 3985</title>
+      <link>/posts/hack-3985/</link>
+      <pubDate>Wed, 30 Nov 2022 09:57:16 +0100</pubDate>
+      
+      <guid>/posts/hack-3985/</guid>
+      <description>Situation Legacy accounts were created for dedicated applications which are now defunct with resources in these accounts still incurring costs to the organisation. Automating the deletion of AWS resources in legacy accounts is required for reducing costs and security risks.
+Task My colleague and I were tasked with auditing legacy accounts, recording costs, and creating a solution for automating the removal of resources after migrating application logs to a new and dedicated log account.</description>
+    </item>
+    
+    <item>
+      <title>Release 0</title>
+      <link>/posts/release0/</link>
+      <pubDate>Thu, 30 Jun 2022 10:26:56 +0100</pubDate>
+      
+      <guid>/posts/release0/</guid>
+      <description>Introduction About Me I am Ben Fielding and I work at Department for Work and Pensions, within the Digital Group, as an Apprentice DevOps engineer. My background is mainly in the private sector working within the parking industry. Some of my experience with technology was gained through configuring and repairing parking equipment. Prior to being made redundant in January 2020 I was department lead on a project to build and launch a parking app, which gave me some experience of writing tests, testing, doing user research and working in sprints.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>plan-do-check-act on Ben Fielding - Apprenticeship Portfolio</title>
+    <link>/tags/plan-do-check-act/</link>
+    <description>Recent content in plan-do-check-act on Ben Fielding - Apprenticeship Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Oct 2022 18:12:03 +0100</lastBuildDate><atom:link href="/tags/plan-do-check-act/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack 4235</title>
+      <link>/posts/hack-4235/</link>
+      <pubDate>Sat, 22 Oct 2022 18:12:03 +0100</pubDate>
+      
+      <guid>/posts/hack-4235/</guid>
+      <description>Situation Configuration of Jenkins controller and agents is done by means of a Jenkins module which holds all of the Jenkins configuration in a mixture of xml and other files.
+Task In order to standardize the configuration, utilize consul templates to configure application within the terraform-aws-jenkins module.
+Action I decided to use the Plan-Do-Check-Act problem solving technique in my workflow for this ticket as I felt it would be most appropriate.</description>
+    </item>
+    
+  </channel>
+</rss>

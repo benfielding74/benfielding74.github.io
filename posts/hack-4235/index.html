@@ -6,20 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Hack 4235 | Ben Fielding - Apprenticeship Portfolio</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="problem solving techniques, plan-do-check-act">
 <meta name="description" content="Situation Configuration of Jenkins controller and agents is done by means of a Jenkins module which holds all of the Jenkins configuration in a mixture of xml and other files.
 Task In order to standardize the configuration, utilize consul templates to configure application within the terraform-aws-jenkins module.
 Action I decided to use the Plan-Do-Check-Act problem solving technique in my workflow for this ticket as I felt it would be most appropriate.">
 <meta name="author" content="">
-<link rel="canonical" href="http://benfielding74.github.io/posts/hack-4235/">
+<link rel="canonical" href="/posts/hack-4235/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.a8004b0d4af4113e0b10450304de95044c286fb2526cd887ce1059a6a0ddb0a5.css" integrity="sha256-qABLDUr0ET4LEEUDBN6VBEwob7JSbNiHzhBZpqDdsKU=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="http://benfielding74.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://benfielding74.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://benfielding74.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://benfielding74.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="http://benfielding74.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <noscript>
@@ -63,9 +63,9 @@ Action I decided to use the Plan-Do-Check-Act problem solving technique in my wo
 Task In order to standardize the configuration, utilize consul templates to configure application within the terraform-aws-jenkins module.
 Action I decided to use the Plan-Do-Check-Act problem solving technique in my workflow for this ticket as I felt it would be most appropriate." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://benfielding74.github.io/posts/hack-4235/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-05-22T18:12:03&#43;01:00" />
-<meta property="article:modified_time" content="2023-05-22T18:12:03&#43;01:00" />
+<meta property="og:url" content="/posts/hack-4235/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-22T18:12:03&#43;01:00" />
+<meta property="article:modified_time" content="2022-10-22T18:12:03&#43;01:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hack 4235"/>
@@ -83,13 +83,13 @@ Action I decided to use the Plan-Do-Check-Act problem solving technique in my wo
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://benfielding74.github.io/posts/"
-    }, 
+      "item": "/posts/"
+    }
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Hack 4235",
-      "item": "http://benfielding74.github.io/posts/hack-4235/"
+      "item": "/posts/hack-4235/"
     }
   ]
 }
@@ -102,23 +102,23 @@ Action I decided to use the Plan-Do-Check-Act problem solving technique in my wo
   "name": "Hack 4235",
   "description": "Situation Configuration of Jenkins controller and agents is done by means of a Jenkins module which holds all of the Jenkins configuration in a mixture of xml and other files.\nTask In order to standardize the configuration, utilize consul templates to configure application within the terraform-aws-jenkins module.\nAction I decided to use the Plan-Do-Check-Act problem solving technique in my workflow for this ticket as I felt it would be most appropriate.",
   "keywords": [
-    
+    "problem solving techniques", "plan-do-check-act"
   ],
   "articleBody": "Situation Configuration of Jenkins controller and agents is done by means of a Jenkins module which holds all of the Jenkins configuration in a mixture of xml and other files.\nTask In order to standardize the configuration, utilize consul templates to configure application within the terraform-aws-jenkins module.\nAction I decided to use the Plan-Do-Check-Act problem solving technique in my workflow for this ticket as I felt it would be most appropriate. It is recommended for use when you are developing a new or improved design of a process, product or service, implementing any change, or starting a new improvement. As this was an iteration of our Jenkins stack that was designed to implement new security features and would require testing I felt this would be a good fit. (K6)\nThe Plan-Do-Check-Act technique:\nPlan - plan what needs to be done what is the core problem that needs to be solved? what resources do we have? what resources do we need? what is the best solution for fixing the problem? definition of done/what are the goals/what does success look like?\nDO - apply everything that has been considered during the previous stage -incorporate on a small scale in a controlled environment\nCheck - audit the plans execution see if it worked and monitor, analyze faults and problems\nAct - adopt if objectives met, may become standard baseline, make improvements\nI first had to do some research to understand how the current configuration works, how the files were structured, and decide how I would implement any possible solution.\nIn applying my plan (the Do stage) I updated the maven settings to be .ctmpl files instead of .xml files. I changed the references to credentials within the .xml files to reference instead a vault path and I updated the cloudinit_base.tmpl so that referenced the new file. I then added a new path in the Vault UI to hold the credentials. I then added a gradle.properties file holding the configuration for that.\n{{ with secret \"/secrets-infra/jenkins/generic/maven\" }}{{ .Data.data.security_password }}{{ end }} example of abstracting credentials to Vault\nI had to run my changes in a worker node within a test environment that we have to check if my changes were working. I ran into errors with the maven settings and new files that I had created. To identify the cause of some of these errors I had to ssh into the Jenkins instance and verify that /var/lib/jenkins/.m2 had the templates I had created in a rendered format. I could also check the status of Jenkins and query the startup logs. I debugged these errors one by one which mostly involved adjusting syntax and file paths for the changes I had made. Once I had everything working as it had been with the config in .xml I submitted a merge request and waited for a review by a senior.\nResult MR approved and merged and my changes rolled out to all environments. Ticket was beneficial to me as it started to give me an understanding of how Jenkins works and how we can utilize Vault to protect credentials within pipelines. Ticket benefitted the team and other feature teams using Jenkins as it enhanced security and the use of consul templates made the configuration easier to understand and amend.\n",
   "wordCount" : "545",
   "inLanguage": "en",
-  "datePublished": "2023-05-22T18:12:03+01:00",
-  "dateModified": "2023-05-22T18:12:03+01:00",
+  "datePublished": "2022-10-22T18:12:03+01:00",
+  "dateModified": "2022-10-22T18:12:03+01:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://benfielding74.github.io/posts/hack-4235/"
+    "@id": "/posts/hack-4235/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Ben Fielding - Apprenticeship Portfolio",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://benfielding74.github.io/favicon.ico"
+      "url": "/favicon.ico"
     }
   }
 }
@@ -140,7 +140,7 @@ Action I decided to use the Plan-Do-Check-Act problem solving technique in my wo
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://benfielding74.github.io/" accesskey="h" title="Ben Fielding - Apprenticeship Portfolio (Alt + H)">Ben Fielding - Apprenticeship Portfolio</a>
+            <a href="/" accesskey="h" title="Ben Fielding - Apprenticeship Portfolio (Alt + H)">Ben Fielding - Apprenticeship Portfolio</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -166,7 +166,12 @@ Action I decided to use the Plan-Do-Check-Act problem solving technique in my wo
         </div>
         <ul id="menu">
             <li>
-                <a href="http://benfielding74.github.io/contents/" title="contents">
+                <a href="/categories/" title="categories">
+                    <span><i class='fa fa-heart'></i>categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="/contents/" title="contents">
                     <span><i class='fa fa-heart'></i>contents</span>
                 </a>
             </li>
@@ -181,7 +186,7 @@ Action I decided to use the Plan-Do-Check-Act problem solving technique in my wo
     <h1 class="post-title">
       Hack 4235
     </h1>
-    <div class="post-meta"><span title='2023-05-22 18:12:03 +0100 BST'>May 22, 2023</span>&nbsp;|&nbsp;<a href="https://github.com/benfielding74/apprentice-portfolio/tree/main/content/posts/hack-4235/index.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta"><span title='2022-10-22 18:12:03 +0100 BST'>October 22, 2022</span>&nbsp;|&nbsp;<a href="https://github.com/benfielding74/apprentice-portfolio/tree/main/content/posts/hack-4235/index.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> 
@@ -190,7 +195,7 @@ Action I decided to use the Plan-Do-Check-Act problem solving technique in my wo
 <h4 id="task">Task<a hidden class="anchor" aria-hidden="true" href="#task">#</a></h4>
 <p>In order to standardize the configuration, utilize consul templates to configure application within the <code>terraform-aws-jenkins</code> module.</p>
 <h4 id="action">Action<a hidden class="anchor" aria-hidden="true" href="#action">#</a></h4>
-<p>I decided to use the Plan-Do-Check-Act problem solving technique in my workflow for this ticket as I felt it would be most appropriate. It is recommended for use when you are developing a new or improved design of a process, product or service, implementing any change, or starting a new improvement. As this was an iteration of our Jenkins stack that was designed to implement new security features and would require testing I felt this would be a good fit. <a href="http://benfielding74.github.io/posts/work-mapping-table/#K6.1">(<em>K6</em>)</a></p>
+<p>I decided to use the Plan-Do-Check-Act problem solving technique in my workflow for this ticket as I felt it would be most appropriate. It is recommended for use when you are developing a new or improved design of a process, product or service, implementing any change, or starting a new improvement. As this was an iteration of our Jenkins stack that was designed to implement new security features and would require testing I felt this would be a good fit. <a href="/posts/work-mapping-table/#K6.1">(<em>K6</em>)</a></p>
 <blockquote>
 <p>The Plan-Do-Check-Act technique:</p>
 <p>Plan - plan what needs to be done
@@ -219,13 +224,15 @@ definition of done/what are the goals/what does success look like?</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="/tags/problem-solving-techniques/">problem solving techniques</a></li>
+      <li><a href="/tags/plan-do-check-act/">plan-do-check-act</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="http://benfielding74.github.io/">Ben Fielding - Apprenticeship Portfolio</a></span>
+    <span>&copy; 2023 <a href="/">Ben Fielding - Apprenticeship Portfolio</a></span>
     <span>Version 2.3.1</span>
     <span>
         Powered by

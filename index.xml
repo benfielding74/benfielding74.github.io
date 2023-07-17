@@ -17,16 +17,6 @@
     </item>
     
     <item>
-      <title>Hack 4361</title>
-      <link>/posts/hack-4361/</link>
-      <pubDate>Mon, 23 Jan 2023 18:57:19 +0100</pubDate>
-      
-      <guid>/posts/hack-4361/</guid>
-      <description>Situation The Nomad health check for the Find and Refer kong-traefik service is failing1. Following Traefik deployment a smoke test is run, this test simply curls some endpoints specific to the deployment. A response code HTTP 200 is the expected response, anything else will cause the health check to fail. Some preliminary investigation has identified that the health check is curling an incorrect end point.
-Task The requirements of the ticket are to adjust the health check as neccessary and test in sandbox environment to ensure it&amp;rsquo;s working.</description>
-    </item>
-    
-    <item>
       <title>Hack Hw255</title>
       <link>/posts/hack-hw255/</link>
       <pubDate>Thu, 05 Jan 2023 12:13:26 +0000</pubDate>

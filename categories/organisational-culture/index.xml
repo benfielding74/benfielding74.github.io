@@ -16,5 +16,14 @@
       <description>Situation A developer team working the Find and Refer service are alerted within a Slack channel when a file is added to some specific targeted AWS s3 buckets. They have made a request which has been added to the HACK team sprint as a working ticket. They have requested that &amp;lsquo;to support incident management and ease repetitive cognitive load&amp;rsquo; they would also like to be alerted when specific files have NOT been added to their buckets by a given time.</description>
     </item>
     
+    <item>
+      <title>Release 0</title>
+      <link>/posts/release0/</link>
+      <pubDate>Thu, 30 Jun 2022 10:26:56 +0100</pubDate>
+      
+      <guid>/posts/release0/</guid>
+      <description>Introduction About Me I am Ben Fielding and I work at Department for Work and Pensions, within the Digital Group, as an Apprentice DevOps engineer. My background is mainly in the private sector working within the parking industry. Some of my experience with technology was gained through configuring and repairing parking equipment. Prior to being made redundant in January 2020 I was department lead on a project to build and launch a parking app, which gave me some experience of writing tests, testing, doing user research and working in sprints.</description>
+    </item>
+    
   </channel>
 </rss>

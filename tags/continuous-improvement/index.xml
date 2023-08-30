@@ -13,7 +13,7 @@
       <pubDate>Tue, 18 Oct 2022 14:00:48 +0100</pubDate>
       
       <guid>/posts/hack-hw98/</guid>
-      <description>Situation A developer team working the Find and Refer service are alerted within a Slack channel when a file is added to some specific targeted AWS s3 buckets. They have made a request which has been added to the HACK team sprint as a working ticket. They have requested that &amp;lsquo;to support incident management and ease repetitive cognitive load&amp;rsquo; they would also like to be alerted when specific files have NOT been added to their buckets by a given time.</description>
+      <description>Situation A developer team working the Find and Refer service are alerted within a Slack channel when a file is added to some specific targeted AWS s3 buckets. They have made a request which has been added to the HACK team sprint as a working ticket. They have requested that &amp;rsquo;to support incident management and ease repetitive cognitive load&amp;rsquo; they would also like to be alerted when specific files have NOT been added to their buckets by a given time.</description>
     </item>
     
   </channel>

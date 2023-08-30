@@ -13,11 +13,7 @@
       <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
       
       <guid>/posts/ami-refresh-project/</guid>
-<<<<<<< Updated upstream
-      <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface or servers and ensure they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
-=======
       <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface of servers ensuring they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
->>>>>>> Stashed changes
     </item>
     
     <item>
@@ -45,11 +41,7 @@ Task My colleague and I were tasked with auditing legacy accounts, recording cos
       <pubDate>Wed, 30 Nov 2022 09:57:16 +0100</pubDate>
       
       <guid>/posts/saas-vs-bespoke/</guid>
-<<<<<<< Updated upstream
-      <description>A Table comparing the pros and cons of Saas, Bespoke and Enterprise tooling    Software-as-a-Service (SaaS) Bespoke Enterprise Tooling     Pros       Cost-effective Tailored to specific needs Offers extensive customization    Easy to use and deploy More control over functionality Offers advanced features and capabilities    Scalable Purpose built features and functionality Integration with other enterprise systems    Accessible from anywhere with an internet connection Not tied to a supplier Strong security and compliance measures    Automatic updates and upgrades Easy to change and update More suitable for large-scale projects   Cons       Less customization May not be as secure Can be complex and difficult to deploy    May not integrate with other systems Requires more research and planning Requires dedicated resources    Dependence on vendor for support and maintenance May not meet all business requirements May have longer development times    Data security concerns May not be scalable May have high licensing costs    </description>
-=======
       <description>A Table comparing the pros and cons of Saas, Bespoke and Enterprise tooling Software-as-a-Service (SaaS) Bespoke Enterprise Tooling Pros Cost-effective Tailored to specific needs Offers extensive customization Easy to use and deploy More control over functionality Offers advanced features and capabilities Scalable Purpose built features and functionality Integration with other enterprise systems Accessible from anywhere with an internet connection Not tied to a supplier Strong security and compliance measures Automatic updates and upgrades Easy to change and update More suitable for large-scale projects Cons Less customization May not be as secure Can be complex and difficult to deploy May not integrate with other systems Requires more research and planning Requires dedicated resources Dependence on vendor for support and maintenance May not meet all business requirements May have longer development times Data security concerns May not be scalable May have high licensing costs </description>
->>>>>>> Stashed changes
     </item>
     
     <item>
@@ -79,7 +71,7 @@ Action I decided to use the Plan-Do-Check-Act problem solving technique in my wo
       <pubDate>Tue, 18 Oct 2022 14:00:48 +0100</pubDate>
       
       <guid>/posts/hack-hw98/</guid>
-      <description>Situation A developer team working the Find and Refer service are alerted within a Slack channel when a file is added to some specific targeted AWS s3 buckets. They have made a request which has been added to the HACK team sprint as a working ticket. They have requested that &amp;lsquo;to support incident management and ease repetitive cognitive load&amp;rsquo; they would also like to be alerted when specific files have NOT been added to their buckets by a given time.</description>
+      <description>Situation A developer team working the Find and Refer service are alerted within a Slack channel when a file is added to some specific targeted AWS s3 buckets. They have made a request which has been added to the HACK team sprint as a working ticket. They have requested that &amp;rsquo;to support incident management and ease repetitive cognitive load&amp;rsquo; they would also like to be alerted when specific files have NOT been added to their buckets by a given time.</description>
     </item>
     
     <item>
@@ -99,7 +91,7 @@ Task Myself and another apprentice were asked if we would prepare and deliver a 
       
       <guid>/posts/hack-3975/</guid>
       <description>Situation A request for a feature was added to team Kanban board. In a legacy project the Devs received a notification to a Slack channel whenever a file is added or deleted from their S3 buckets. They were requesting that this functionality be added to the current project.
- As a developer I would like to receive a notification into the #uc-far-prod-alerts Slack channel whenever an object is added to or deleted from the new S3 buckets.</description>
+As a developer I would like to receive a notification into the #uc-far-prod-alerts Slack channel whenever an object is added to or deleted from the new S3 buckets.</description>
     </item>
     
     <item>
@@ -117,7 +109,7 @@ Task Myself and another apprentice were asked if we would prepare and deliver a 
       <pubDate>Wed, 29 Jun 2022 14:59:39 +0100</pubDate>
       
       <guid>/posts/reference-list/</guid>
-      <description>Reference Type Details Viewed Link Number      Web Page AWS Documentation, &amp;lsquo;Restoring an archived object&amp;rsquo; 19/08/22 https://docs.aws.amazon.com/AmazonS3/latest/userguide/restoring-objects.html 1    Web page Alex W L Chan, July 2019, &amp;lsquo;Listing even more keys in an s3 bucket with Python&amp;rsquo; 25/08/22 https://alexwlchan.net/2019/07/listing-s3-keys/ 2    Web Page Boto3 Docs 1.24.59, &amp;lsquo;Error Handling&amp;rsquo; 25/08/22 https://boto3.amazonaws.com/v1/documentation/api/latest/guide/error-handling.html 3    Web Page Prometheus issues on github, &amp;lsquo;Schedules for scrape configs and alerts #6209&amp;rsquo; 09/11/22 https://github.</description>
+      <description>Reference Type Details Viewed Link Number Web Page AWS Documentation, &amp;lsquo;Restoring an archived object&amp;rsquo; 19/08/22 https://docs.aws.amazon.com/AmazonS3/latest/userguide/restoring-objects.html 1 Web page Alex W L Chan, July 2019, &amp;lsquo;Listing even more keys in an s3 bucket with Python&amp;rsquo; 25/08/22 https://alexwlchan.net/2019/07/listing-s3-keys/ 2 Web Page Boto3 Docs 1.24.59, &amp;lsquo;Error Handling&amp;rsquo; 25/08/22 https://boto3.amazonaws.com/v1/documentation/api/latest/guide/error-handling.html 3 Web Page Prometheus issues on github, &amp;lsquo;Schedules for scrape configs and alerts #6209&amp;rsquo; 09/11/22 https://github.com/prometheus/prometheus/issues/6209 4 Web Page Robert Walters, January 2017, &amp;lsquo;Providing Least Privileged Data Access In MongoDB&amp;rsquo; 28/11/22 https://www.</description>
     </item>
     
     <item>
@@ -136,7 +128,7 @@ Task Myself and another apprentice were asked if we would prepare and deliver a 
       
       <guid>/posts/self-led-learning/</guid>
       <description>Team specific courses undertaken during my apprenticeship
-  Course title Provider Link to course content Time spent completing Tools and Technologies covered     Setting Up Lambda Functions with S3 Event Triggers Cloud Guru Examples of course content 1 Hour AWS IAM, SNS, Lambda, s3api   Hashicorp Certified: Terraform Associate Pluralsight Examples of course content 8 hours Hashicorp Terraform Certification Path   Technical Writing Courses Google https://developers.</description>
+Course title Provider Link to course content Time spent completing Tools and Technologies covered Setting Up Lambda Functions with S3 Event Triggers Cloud Guru Examples of course content 1 Hour AWS IAM, SNS, Lambda, s3api Hashicorp Certified: Terraform Associate Pluralsight Examples of course content 8 hours Hashicorp Terraform Certification Path Technical Writing Courses Google https://developers.google.com/tech-writing 2 hours Covering how to write effective technical documents Network Concepts and Protocols Pluralsight Examples of course content 3 hours CompTIA Network+ Path Getting Started With Linux Pluralsight Examples of course content 1 Hour 44 minutes LPI Linux Essentials Path Understanding IAM AWS Tech Enablement session Examples of course content 1 hour Covering IAM foundation principles, writing IAM policies and working towards least privilege Applying Professional Scrum Quanta Training https://www.</description>
     </item>
     
     <item>
@@ -145,7 +137,7 @@ Task Myself and another apprentice were asked if we would prepare and deliver a 
       <pubDate>Wed, 29 Jun 2022 12:05:16 +0100</pubDate>
       
       <guid>/posts/work-mapping-table/</guid>
-      <description>KSB no. KSB Description What Tickets have met this standard Overview of how I met KSB Link to ticket page     K3 How to use data ethically and the implications for wider society, with respect to the use of data, automation and artificial intelligence within the context of relevant data protection policy and legislation. hack-hw255 Understanding how DWP are bound by Data Protection legislation to protect the privacy of our customers and their data and how it could cause reputational damage and loss of trust in the service if data was misused.</description>
+      <description>KSB no. KSB Description What Tickets have met this standard Overview of how I met KSB Link to ticket page K3 How to use data ethically and the implications for wider society, with respect to the use of data, automation and artificial intelligence within the context of relevant data protection policy and legislation. hack-hw255 Understanding how DWP are bound by Data Protection legislation to protect the privacy of our customers and their data and how it could cause reputational damage and loss of trust in the service if data was misused.</description>
     </item>
     
     <item>
@@ -155,7 +147,7 @@ Task Myself and another apprentice were asked if we would prepare and deliver a 
       
       <guid>/posts/key-skills-matrix/</guid>
       <description>Knowledge, Skills and Behaviours The professional discussion focuses on 20 Knowledge, Skills and Behaviours which are demonstrated within the portfolio
-  KSB Description     K3 How to use data ethically and the implications for wider society, with respect to the use of data, automation and artificial intelligence within the context of relevant data protection policy and legislation.   K6 A range of problem solving techniques appropriate to the task at hand, such as affinity mapping, impact maps, plan-do-check-act/Deming.</description>
+KSB Description K3 How to use data ethically and the implications for wider society, with respect to the use of data, automation and artificial intelligence within the context of relevant data protection policy and legislation. K6 A range of problem solving techniques appropriate to the task at hand, such as affinity mapping, impact maps, plan-do-check-act/Deming.</description>
     </item>
     
   </channel>

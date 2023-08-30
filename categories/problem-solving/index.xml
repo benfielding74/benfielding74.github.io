@@ -13,7 +13,7 @@
       <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
       
       <guid>/posts/ami-refresh-project/</guid>
-      <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface or servers and ensure they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
+      <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface of servers ensuring they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
     </item>
     
     <item>
@@ -23,7 +23,7 @@
       
       <guid>/posts/hack-4235/</guid>
       <description>Situation Configuration of Jenkins controller and agents is done by means of a Jenkins module which holds all of the Jenkins configuration in a mixture of xml and other files.
-Task In order to standardize the configuration, utilize consul templates to configure application within the terraform-aws-jenkins module.
+Task In order to standardize the configuration, consul templates should be used to configure the application within the terraform-aws-jenkins module.
 Action I decided to use the Plan-Do-Check-Act problem solving technique in my workflow for this ticket as I felt it would be most appropriate.</description>
     </item>
     

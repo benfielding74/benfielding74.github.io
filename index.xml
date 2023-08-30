@@ -13,7 +13,11 @@
       <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
       
       <guid>/posts/ami-refresh-project/</guid>
+<<<<<<< Updated upstream
       <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface or servers and ensure they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
+=======
+      <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface of servers ensuring they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
+>>>>>>> Stashed changes
     </item>
     
     <item>
@@ -41,7 +45,11 @@ Task My colleague and I were tasked with auditing legacy accounts, recording cos
       <pubDate>Wed, 30 Nov 2022 09:57:16 +0100</pubDate>
       
       <guid>/posts/saas-vs-bespoke/</guid>
+<<<<<<< Updated upstream
       <description>A Table comparing the pros and cons of Saas, Bespoke and Enterprise tooling    Software-as-a-Service (SaaS) Bespoke Enterprise Tooling     Pros       Cost-effective Tailored to specific needs Offers extensive customization    Easy to use and deploy More control over functionality Offers advanced features and capabilities    Scalable Purpose built features and functionality Integration with other enterprise systems    Accessible from anywhere with an internet connection Not tied to a supplier Strong security and compliance measures    Automatic updates and upgrades Easy to change and update More suitable for large-scale projects   Cons       Less customization May not be as secure Can be complex and difficult to deploy    May not integrate with other systems Requires more research and planning Requires dedicated resources    Dependence on vendor for support and maintenance May not meet all business requirements May have longer development times    Data security concerns May not be scalable May have high licensing costs    </description>
+=======
+      <description>A Table comparing the pros and cons of Saas, Bespoke and Enterprise tooling Software-as-a-Service (SaaS) Bespoke Enterprise Tooling Pros Cost-effective Tailored to specific needs Offers extensive customization Easy to use and deploy More control over functionality Offers advanced features and capabilities Scalable Purpose built features and functionality Integration with other enterprise systems Accessible from anywhere with an internet connection Not tied to a supplier Strong security and compliance measures Automatic updates and upgrades Easy to change and update More suitable for large-scale projects Cons Less customization May not be as secure Can be complex and difficult to deploy May not integrate with other systems Requires more research and planning Requires dedicated resources Dependence on vendor for support and maintenance May not meet all business requirements May have longer development times Data security concerns May not be scalable May have high licensing costs </description>
+>>>>>>> Stashed changes
     </item>
     
     <item>
@@ -61,7 +69,7 @@ Task The scope of the ticket was to contact Secure Design Services to find out w
       
       <guid>/posts/hack-4235/</guid>
       <description>Situation Configuration of Jenkins controller and agents is done by means of a Jenkins module which holds all of the Jenkins configuration in a mixture of xml and other files.
-Task In order to standardize the configuration, utilize consul templates to configure application within the terraform-aws-jenkins module.
+Task In order to standardize the configuration, consul templates should be used to configure the application within the terraform-aws-jenkins module.
 Action I decided to use the Plan-Do-Check-Act problem solving technique in my workflow for this ticket as I felt it would be most appropriate.</description>
     </item>
     

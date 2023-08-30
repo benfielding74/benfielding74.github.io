@@ -14,7 +14,7 @@
       
       <guid>/posts/hack-4235/</guid>
       <description>Situation Configuration of Jenkins controller and agents is done by means of a Jenkins module which holds all of the Jenkins configuration in a mixture of xml and other files.
-Task In order to standardize the configuration, utilize consul templates to configure application within the terraform-aws-jenkins module.
+Task In order to standardize the configuration, consul templates should be used to configure the application within the terraform-aws-jenkins module.
 Action I decided to use the Plan-Do-Check-Act problem solving technique in my workflow for this ticket as I felt it would be most appropriate.</description>
     </item>
     

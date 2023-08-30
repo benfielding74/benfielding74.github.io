@@ -13,7 +13,7 @@
       <pubDate>Sun, 28 May 2023 17:14:42 +0100</pubDate>
       
       <guid>/posts/ami-refresh-project/</guid>
-      <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface or servers and ensure they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
+      <description>Situation In order to patch vulnerabilities and install software version updates so as to decrease the attack surface of servers ensuring they are equipped to support feature team applications, a process is in place within our department that builds a new Amazon Machine Image. This is then updated within the application and infrastructure stacks by applying Terraform before finally Auto Scaling Group refreshes are manually carried out to apply the new launch templates.</description>
     </item>
     
   </channel>
